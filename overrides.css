@@ -28,6 +28,13 @@
   .gallery, .carwash { aspect-ratio: 2 / 3; }
   /* hero showreel mockup also taller on phones */
   .browser .screen { aspect-ratio: 4 / 5; }
+  /* case-study downtown reel: elongate from the wide 2:1 strip */
+  .reel { aspect-ratio: 4 / 5; }
+  /* car wash: show ALL three plan pills (Express / Deluxe / Ultimate),
+     let them wrap and shrink so they fit on a narrow screen */
+  .carwash .c-plans { flex-wrap: wrap; justify-content: flex-end; gap: 6px; max-width: 80%; }
+  .carwash .c-plans .pl:not(.feat) { display: flex; }
+  .carwash .c-plans .pl { padding: 6px 10px; }
 }
 
 /* ---------------------------------------------------------

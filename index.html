@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bru Design Studio | High-converting websites, built fast, for every business</title>
+<meta name="description" content="Bru Design Studio designs high-converting, custom websites for businesses of every size. You run the business, we build the site that grows it. Book a free consultation." />
+<meta name="theme-color" content="#c7a17a" />
+<meta property="og:title" content="Bru Design Studio | websites that actually sell" />
+<meta property="og:description" content="Every business deserves a high-converting website. Built fast. Built for the real world. Free consultation." />
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=11" />
+<!-- preload showcase imagery so the live demos appear instantly, no pop-in -->
+<link rel="preload" as="image" href="assets/showcase-museum.jpg" />
+<link rel="preload" as="image" href="assets/now-on-display.jpg" />
+<link rel="preload" as="image" href="assets/showcase-carwash.jpeg" />
+</head>
+<body>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="page-bg"></div>
+<div class="orbs" aria-hidden="true"><span class="o1"></span><span class="o2"></span><span class="o3"></span></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<nav id="nav" aria-label="Primary">
+  <a class="brand" href="index.html" aria-label="Bru Design Studio home">
+    <img class="mark" src="assets/logo-mark.png" alt="" aria-hidden="true" />
+    <span class="brand-text">Bru Design Studio<small>Websites that convert</small></span>
+  </a>
+  <div class="nav-cluster">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a class="nav-cta" href="contact.html">Free consultation</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-copy">
+    <span class="tag">Bru Design Studio</span>
+    <h1>Your business deserves a website that <em>actually sells.</em></h1>
+    <p class="hero-sub">We design high-converting, custom websites that turn visitors into customers. Built in days, not
+      months, and priced for the real world. You run the business; we build the site that grows it.</p>
+    <div class="hero-actions">
+      <a class="btn" href="contact.html" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+        Book a free consultation
+      </a>
+      <a class="btn ghost" href="#work" data-magnetic>See the work</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>Days</b><span>to launch, not months</span></div>
+      <div><b>$0</b><span>to talk it through</span></div>
+      <div><b>100%</b><span>built around conversions</span></div>
+    </div>
+  </div>
+
+  <div class="stage" aria-hidden="true">
+    <div class="glow"></div>
+    <div style="position:relative;">
+      <div class="browser" id="heroBrowser">
+        <div class="bbar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> what we can build for you</span></div>
+        <div class="screen">
+          <div class="rh" id="reelHero">
+            <!-- Ironside · barbershop -->
+            <div class="rh-slide s-barber active">
+              <img class="bg" src="assets/shot-barbershop.jpg" alt="" onerror="this.remove()" />
+              <div class="scrim"></div>
+              <div class="c">
+                <span class="word">Ironside</span>
+                <span class="eyebrow">Barbershop · Est. 2014</span>
+                <h4>Look sharp. Feel sharper.</h4>
+                <i class="b-outline">Book a chair</i>
+              </div>
+            </div>
+            <!-- FlowLine · commercial plumbing -->
+            <div class="rh-slide s-plumb">
+              <div class="left">
+                <div class="brandrow"><span class="d"></span><b>FlowLine</b><span class="nv">Services · Commercial · Contact</span></div>
+                <span class="eyebrow">Commercial plumbing</span>
+                <h4>Commercial plumbing, done right.</h4>
+                <i class="b-square">Request service</i>
+              </div>
+              <div class="right"><img class="bg" src="assets/shot-plumbing.jpg" alt="" onerror="this.remove()" /></div>
+            </div>
+            <!-- Wander & Co. · travel -->
+            <div class="rh-slide s-travel">
+              <img class="bg" src="assets/shot-travel.jpg" alt="" onerror="this.remove()" />
+              <div class="scrim"></div>
+              <div class="card">
+                <b>Wander &amp; Co.</b>
+                <h4>See the world, beautifully</h4>
+                <span class="price">Bespoke trips from $1,200</span>
+                <i class="b-pill">Plan your trip</i>
+              </div>
+            </div>
+            <!-- Ironhaus · gym -->
+            <div class="rh-slide s-gym">
+              <img class="bg" src="assets/shot-gym.jpg" alt="" onerror="this.remove()" />
+              <div class="scrim"></div>
+              <span class="chip">Open 24/7</span>
+              <div class="c">
+                <span class="eyebrow">Strength gym</span>
+                <h4>Train loud. Live strong.</h4>
+                <i class="b-bar">Join now</i>
+              </div>
+            </div>
+          </div>
+          <div class="rh-ticker"><div class="tk" id="reelTicker"></div></div>
+        </div>
+      </div>
+      <div class="seal hero-seal">
+        <div class="ring">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sealHero" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+            <text fill="#7e5a2b"><textPath href="#sealHero" startOffset="0">BRU DESIGN STUDIO · WEBSITES THAT CONVERT · </textPath></text></svg>
+        </div>
+        <div class="core glass" style="border-radius:50%"><img src="assets/logo-mark.png" alt="" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE RIBBON ============ -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="mq-track">
+    <span>Cinematic</span><span>3D &amp; Parallax</span><span>Bespoke Design</span><span>Signature Motion</span><span>Interactive</span><span>Conversion-First</span><span>Fully Custom</span><span>Done For You</span><span>Cinematic</span><span>3D &amp; Parallax</span><span>Bespoke Design</span><span>Signature Motion</span><span>Interactive</span><span>Conversion-First</span><span>Fully Custom</span><span>Done For You</span>
+  </div>
+</div>
+
+<!-- ============ PROBLEM / STORY ============ -->
+<section class="problem" id="problem" aria-labelledby="problem-h">
+  <img class="wm-dog" src="assets/logo-mark.png" alt="" aria-hidden="true" />
+  <div class="wrap" style="position:relative;z-index:1;">
+    <!-- text beside the museum example -->
+    <div class="case showcase-case reveal">
+      <div class="sec-head">
+        <span class="tag">The website gap</span>
+        <h2 id="problem-h">Big companies get million-dollar websites. <em>Everyone else gets left behind.</em></h2>
+        <p>You already know a great website could grow your sales. But building one yourself takes time you don't have, and
+          agencies charge thousands and take months. Here's how we flip that:</p>
+      </div>
+      <div class="show-col">
+        <figure class="frame reveal" style="margin:0">
+          <div class="fbar"><span class="dot" style="background:#d9a05f"></span><span class="dot" style="background:#e6c486"></span><span class="dot" style="background:#bda079"></span>
+            <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> meridian-museum.com</span></div>
+          <div class="scene gallery" role="img" aria-label="Animated preview of a premium museum website: the camera slowly glides through an immersive dark gallery while a centered modal announces the current exhibition, The Dan Ondrasek Exhibit.">
+            <img class="s-bg" decoding="async" src="assets/showcase-museum.jpg" alt="" aria-hidden="true" />
+            <div class="g-grade"></div>
+            <div class="s-nav">
+              <span class="s-name">MERIDIAN<small>Museum of Modern Art</small></span>
+              <span class="s-links"><b>Exhibitions</b><b>Collection</b><b>Visit</b></span>
+            </div>
+            <div class="g-modal">
+              <div class="g-modal-img"><img decoding="async" src="assets/now-on-display.jpg" alt="Painting featured in The Dan Ondrasek Exhibit" /></div>
+              <div class="g-modal-cap"><span class="g-modal-k">Now on display</span><b>The Dan Ondrasek Exhibit</b></div>
+            </div>
+            <div class="g-info">
+              <span class="g-eyebrow">The Meridian · Downtown</span>
+              <span class="g-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Open Tue – Sun · 10am – 6pm</span>
+            </div>
+          </div>
+        </figure>
+        <div class="chips"><span>Immersive</span><span>Cinematic motion</span><span>Bespoke design</span></div>
+      </div>
+    </div>
+
+    <!-- the table of what we offer -->
+    <div class="flip">
+      <div class="row reveal">
+        <div class="from"><span class="sr-only">The old way: </span><s>$5,000 to $15,000+ agency builds</s></div>
+        <div class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
+        <div class="to"><span class="sr-only">The Bru way: </span><b>A fraction of the cost</b>, no agency markup</div>
+      </div>
+      <div class="row reveal">
+        <div class="from"><span class="sr-only">The old way: </span><s>2 to 4 months of waiting</s></div>
+        <div class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
+        <div class="to"><span class="sr-only">The Bru way: </span>Live in <b>days, not months</b></div>
+      </div>
+      <div class="row reveal">
+        <div class="from"><span class="sr-only">The old way: </span><s>DIY builders that eat your time</s></div>
+        <div class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
+        <div class="to"><span class="sr-only">The Bru way: </span><b>Done for you</b>, start to finish</div>
+      </div>
+      <div class="row reveal">
+        <div class="from"><span class="sr-only">The old way: </span><s>Templates that don't convert</s></div>
+        <div class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
+        <div class="to"><span class="sr-only">The Bru way: </span>Custom-built to <b>turn visitors into customers</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BELIEF ============ -->
+<section class="belief" aria-label="What we believe">
+  <img class="wm-dog" src="assets/logo-mark.png" alt="" aria-hidden="true" />
+  <div class="wrap">
+    <div class="case showcase-case reveal">
+      <div class="belief-text">
+        <span class="tag">What we believe</span>
+        <p class="pull">Every business deserves a website that <em>works as hard as they do.</em></p>
+        <p class="by">Most owners don't have the time to build their own, and the agencies that do still charge like it's a
+          luxury. <b>We're here to disrupt that.</b></p>
+      </div>
+      <div class="show-col">
+        <figure class="frame reveal" style="margin:0">
+          <div class="fbar"><span class="dot" style="background:#d9a05f"></span><span class="dot" style="background:#e6c486"></span><span class="dot" style="background:#bda079"></span>
+            <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> riptidewash.com</span></div>
+          <div class="scene carwash" role="img" aria-label="Animated preview of a car wash website: a car advances through the wash stages — pre-soak, foam bath, scrub, rinse, shield wax and air dry — alongside three service plans.">
+            <img class="s-bg" decoding="async" src="assets/showcase-carwash.jpeg" alt="" aria-hidden="true" />
+            <div class="c-grade"></div>
+            <div class="s-nav">
+              <span class="s-name">RIPTIDE<small>Express Car Wash</small></span>
+              <span class="s-links"><b>Wash Plans</b><b>Memberships</b><b>Locations</b></span>
+            </div>
+            <div class="c-hero">
+              <span class="c-eyebrow">Open 7 days · Drive in anytime</span>
+              <h4 class="c-title">Showroom shine,<br/>in minutes.</h4>
+            </div>
+            <div class="c-track">
+              <div class="c-rail">
+                <span class="c-fill"></span>
+                <svg class="c-car" viewBox="0 0 64 28" fill="#eaf4ff" aria-hidden="true">
+                  <path d="M2 21 Q3 14 11 13 L19 6.5 Q23 3.5 31 3.5 L41 3.5 Q49 3.5 53 9.5 L59 12 Q63 13 63 18 L63 20.5 Q63 22.5 61 22.5 L4 22.5 Q2 22.5 2 21 Z"/>
+                  <circle cx="17" cy="23" r="5" fill="#0b1f3a"/><circle cx="47" cy="23" r="5" fill="#0b1f3a"/>
+                  <circle cx="17" cy="23" r="2.1" fill="#eaf4ff"/><circle cx="47" cy="23" r="2.1" fill="#eaf4ff"/>
+                </svg>
+              </div>
+              <div class="c-stages">
+                <span class="st st-1">Pre-Soak</span><span class="st st-2">Foam Bath</span><span class="st st-3">Scrub</span><span class="st st-4">Rinse</span><span class="st st-5">Shield Wax</span><span class="st st-6">Air Dry</span>
+              </div>
+            </div>
+            <div class="c-plans">
+              <span class="pl">Express<b>$12</b></span><span class="pl feat">Deluxe<b>$24</b></span><span class="pl">Ultimate<b>$36</b></span>
+            </div>
+          </div>
+        </figure>
+        <div class="chips"><span>Interactive</span><span>Animated walkthrough</span><span>Built to convert</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="capabilities" id="capabilities" aria-labelledby="cap-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">What we build</span>
+      <h2 id="cap-h">Not just a website. A <em>conversion machine.</em></h2>
+      <p>Every site is custom-designed, fast, and built to guide your visitors toward one thing: becoming a customer.</p>
+    </div>
+    <div class="cap-grid" id="capGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WORK / CASE STUDY ============ -->
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Selected work</span>
+      <h2 id="work-h">See what's possible.</h2>
+      <p>A glimpse of the kind of work we deliver: cinematic, interactive, and built to move people to act.</p>
+    </div>
+
+    <div class="case reveal">
+      <div class="ctext">
+        <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/></svg> Case study · Civic campaign</span>
+        <h3>Reclaiming Our Downtown</h3>
+        <p><b>A real grassroots campaign</b> to bring a city's historic, walkable downtown back to life. We started with the
+          campaign's hand-drawn sketch and brought it to life on the page, washing it into full color, then into glowing
+          night, so residents could actually picture the vision and rally behind it.</p>
+        <p>That sketch-to-color-to-night reveal is the whole point. It takes a beautiful hand-drawn vision and lets people
+          step right into it, and that's the storytelling we bring to every build.</p>
+        <div class="chips">
+          <span>Cinematic scroll</span><span>Interactive storytelling</span><span>Vision brought to life</span><span>3D parallax</span><span>Blazing fast</span>
+        </div>
+      </div>
+
+      <figure class="frame reveal" style="margin:0">
+        <div class="fbar"><span class="dot" style="background:#d9a05f"></span><span class="dot" style="background:#e6c486"></span><span class="dot" style="background:#bda079"></span>
+          <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Selected project preview</span></div>
+        <div class="reel" role="img" aria-label="An animated preview of the Reclaiming Our Downtown website: a hand-drawn sketch of a city downtown washes into full color, then into a glowing nighttime scene.">
+          <span class="stage-lbl" aria-hidden="true">Sketch · Color · Night</span>
+          <img class="l-sketch" src="assets/dt-sketch.jpg" alt="" aria-hidden="true" />
+          <img class="l-color" src="assets/dt-color.jpg" alt="" aria-hidden="true" />
+          <img class="l-night" src="assets/dt-night.jpg" alt="" aria-hidden="true" />
+          <div class="cap-strip"><b>A recent project</b><span class="pill">Live preview</span></div>
+        </div>
+        <figcaption class="sr-only">An interactive single-page experience built by Bru Design Studio for a community campaign to revive a historic downtown.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process" aria-labelledby="proc-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">How it works</span>
+      <h2 id="proc-h">Three steps. <em>Days, not months.</em></h2>
+      <p>No jargon, no endless meetings. We talk, we build, you launch.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num" aria-hidden="true">01</div>
+        <h3>We talk, at no cost</h3>
+        <p>A relaxed, no-pressure consultation. Tell us about your business and the one action you most want visitors to take. We'll tell you exactly what's possible.</p>
+        <div class="when">Day 1 · 30 minutes</div>
+      </div>
+      <div class="step reveal">
+        <div class="num" aria-hidden="true">02</div>
+        <h3>We design &amp; build</h3>
+        <p>We craft a custom, conversion-focused site around your brand. You review a live preview and we refine it together until it feels right.</p>
+        <div class="when">Days 2 to 6</div>
+      </div>
+      <div class="step reveal">
+        <div class="num" aria-hidden="true">03</div>
+        <h3>You launch</h3>
+        <p>We go live on your domain, fast and fully responsive. We hand over everything and show you how it works, with simple options to grow it.</p>
+        <div class="when">Day 7 · Live</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">What we offer</span>
+      <h2 id="svc-h">Find the fit for <em>your business.</em></h2>
+      <p>Three ways to work with us, from a fast, focused launch to a fully bespoke experience.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="plan reveal">
+        <div class="pname">Launch</div>
+        <div class="ptag">Get online and converting, fast.</div>
+        <div class="pdiv"></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Custom <b>one-page</b> high-converting site</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Mobile-first &amp; lightning fast</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Contact &amp; lead capture built in</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Live in about a week</span></li>
+        </ul>
+      </div>
+      <div class="plan feat reveal">
+        <span class="ribbon">Most popular</span>
+        <div class="pname">Growth</div>
+        <div class="ptag">For businesses ready to scale.</div>
+        <div class="pdiv"></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Everything in <b>Launch</b>, plus:</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Multi-section storytelling &amp; <b>animations</b></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Custom copywriting &amp; SEO basics</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Bookings, galleries, or menus as needed</span></li>
+        </ul>
+      </div>
+      <div class="plan signature reveal">
+        <span class="ribbon sig-ribbon">Flagship</span>
+        <div class="pname">Signature</div>
+        <div class="ptag">A cinematic, one-of-a-kind experience.</div>
+        <div class="pdiv"></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Everything in <b>Growth</b>, plus:</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Fully bespoke, interactive design</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>3D, parallax &amp; signature motion <span class="muted">(like our case study)</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>Priority delivery &amp; ongoing support</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="svc-cta reveal">
+      <a class="btn" href="contact.html">Book a free consultation</a>
+      <p class="note">Not sure which fits? That's what the free consultation is for. We'll recommend the right approach and send a clear, custom proposal before any work begins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faqsec" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Good to know</span>
+      <h2 id="faq-h">Questions, answered.</h2>
+    </div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<!-- ============ CLOSER ============ -->
+<section class="closer" aria-labelledby="closer-h">
+  <div class="wrap reveal">
+    <span class="tag">Free consultation</span>
+    <h2 id="closer-h">Ready for a website that <em>earns its keep?</em></h2>
+    <p>Tell us about your business and we'll show you exactly what's possible. The first conversation is free, with no obligation.</p>
+    <a class="btn" href="contact.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+      Book a free consultation
+    </a>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="fbrand"><img src="assets/logo-mark.png" alt="" aria-hidden="true" /> Bru Design Studio</div>
+  <div class="fmeta">
+    High-converting websites for businesses of every size.<br/>
+    Free consultations available.
+  </div>
+  <div class="fsoc">
+    <a href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+    </a>
+  </div>
+</footer>
+<div class="copyright">© 2026 Bru Design Studio. All rights reserved. · <a href="privacy.html">Privacy Policy</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="main.js?v=5"></script>
+<script>
+  /* ---------- hero showreel + ticker ---------- */
+  (function(){
+    const slides=[...document.querySelectorAll('#reelHero .rh-slide')];
+    const words=['Conversion-first','Cinematic','Mobile-first','Interactive','Built fast','Fully custom','SEO-ready','On-brand'];
+    const tk=document.getElementById('reelTicker');
+    if(tk){const make=()=>words.map(w=>`<span>${w}</span>`).join('');tk.innerHTML=make()+make();}
+    if(!slides.length)return;
+    function show(n){slides.forEach((s,k)=>s.classList.toggle('active',k===n));}
+    show(0);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    let i=0;setInterval(()=>{i=(i+1)%slides.length;show(i);},3400);
+  })();
+
+  /* ---------- capabilities ---------- */
+  (function(){
+    const caps=[
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 17l5-5 4 4 8-8"/><path d="M16 8h5v5"/></svg>','Conversion-first design','Every headline, button, and section is placed to move visitors toward one clear action: booking, buying, or reaching out.'],
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>','Fast turnaround','Our streamlined studio process takes your site from first idea to launch in days, so you start earning sooner.'],
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>','Flawless on mobile','Most of your visitors are on a phone. Every site is built mobile-first so it looks and works beautifully on any screen.'],
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 19V6l5-4v17"/><path d="M9 19V8l7-4v15"/><path d="M16 19V7l4 2v10"/><path d="M2 19h20"/></svg>','Cinematic &amp; interactive','Scroll animations, parallax, and signature motion: the kind of polish that makes people trust you and remember you.'],
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>','Found on Google','Clean, fast, SEO-ready code so customers searching for what you offer can actually find you.'],
+      ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>','Truly yours','Custom-designed around your brand, never a recycled template. You own it, and we make it easy to keep it growing.'],
+    ];
+    const g=document.getElementById('capGrid');
+    caps.forEach(([ico,t,d])=>{const c=document.createElement('div');c.className='cap';
+      c.innerHTML=`<div class="cico" aria-hidden="true">${ico}</div><h3>${t}</h3><p>${d}</p>`;g.appendChild(c);});
+  })();
+
+  /* ---------- FAQ ---------- */
+  (function(){
+    const qas=[
+      ['Do we really get a website in days?','Yes. Our studio process is built for speed. Most one-page sites go live within about a week of our first call, and your input and content are usually the only thing that sets the pace.'],
+      ['How much does it cost?','Far less than a traditional agency. Every project begins with a free consultation, and we send a clear, custom proposal before any work starts. No retainers, no hidden fees. You only move forward when it\'s right for you.'],
+      ['Is this only for new businesses?','Not at all. We work with businesses of every size and stage, from a brand-new venture to an established brand that needs a site that finally converts. We\'ll tailor the approach to your goals and budget.'],
+      ['What do you need from us to start?','Just a conversation. From there, your logo and a few details about your business and customers. If you don\'t have copy or images, we can help create them. That\'s part of the design.'],
+      ['Will the site be ours?','Completely. It\'s custom-built for your brand and you own it. We\'ll set it up on your domain and show you how everything works, with simple options if you want to grow it later.'],
+    ];
+    const f=document.getElementById('faq');
+    qas.forEach(([q,a])=>{const d=document.createElement('details');d.className='qa';
+      d.innerHTML=`<summary>${q}<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="qa-body">${a}</div>`;
+      f.appendChild(d);});
+  })();
+
+  /* ---------- hero parallax tilt ---------- */
+  (function(){
+    const stage=document.querySelector('.stage'),br=document.getElementById('heroBrowser');
+    if(!stage||!br||matchMedia('(hover:none)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    let tx=0,ty=0,cx=0,cy=0;
+    stage.addEventListener('mousemove',e=>{const r=br.getBoundingClientRect();
+      tx=(e.clientX-r.left)/r.width*2-1;ty=(e.clientY-r.top)/r.height*2-1;});
+    stage.addEventListener('mouseleave',()=>{tx=0;ty=0;});
+    (function loop(){cx+=(tx-cx)*0.07;cy+=(ty-cy)*0.07;
+      br.style.transform=`rotateX(${(-cy*3).toFixed(2)}deg) rotateY(${(cx*4).toFixed(2)}deg)`;
+      requestAnimationFrame(loop);})();
+  })();
+</script>
+</body>
+</html>

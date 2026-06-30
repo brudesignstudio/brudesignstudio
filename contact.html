@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Bru Design Studio</title>
+<meta name="description" content="Get in touch with Bru Design Studio. Book a free consultation or a demo. We'll reply within one business day." />
+<meta name="theme-color" content="#c7a17a" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=11" />
+</head>
+<body>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="page-bg"></div>
+<div class="orbs" aria-hidden="true"><span class="o1"></span><span class="o2"></span><span class="o3"></span></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<nav id="nav" aria-label="Primary">
+  <a class="brand" href="index.html" aria-label="Bru Design Studio home">
+    <img class="mark" src="assets/logo-mark.png" alt="" aria-hidden="true" />
+    <span class="brand-text">Bru Design Studio<small>Websites that convert</small></span>
+  </a>
+  <div class="nav-cluster">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">Free consultation</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" style="padding-bottom:0">
+  <span class="tag">Get in touch</span>
+  <h1>Let's build something that <em>sells.</em></h1>
+  <p>Tell us a little about your business and what you need. Whether it's a free consultation or a quick demo, we'll get
+    back to you within one business day. No pressure, no obligation.</p>
+</section>
+
+<!-- ============ FORM ============ -->
+<section>
+  <div class="wrap" style="padding-top:clamp(28px,5vh,48px);">
+    <div class="form-wrap reveal">
+      <form id="contactForm" class="form" novalidate>
+        <!-- Web3Forms: paste your free access key below so submissions reach your inbox.
+             Get one in 30 seconds at https://web3forms.com (enter your email, copy the key). -->
+        <input type="hidden" name="access_key" value="4974fb9d-89e8-499d-9c17-3a142f084416" />
+        <input type="hidden" name="subject" value="New message from the Bru Design Studio website" />
+        <input type="hidden" name="from_name" value="Bru Design Studio website" />
+        <!-- honeypot: hidden from people, catches bots -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="f-email">Your email <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-business">Business name</label>
+            <input id="f-business" name="business" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="f-topic">What can we help with? <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-topic" name="topic" required>
+              <option value="Free consultation">Free consultation</option>
+              <option value="Book a demo">Book a demo</option>
+              <option value="General question">General question</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-message">Tell us about your project <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="f-message" name="message" required placeholder="What does your business do, and what do you want your website to achieve?"></textarea>
+        </div>
+
+        <div class="captcha">
+          <span class="q"><span id="capA">0</span> + <span id="capB">0</span> = ?</span>
+          <div class="field">
+            <label for="f-captcha">Quick spam check <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-captcha" name="captcha" type="text" inputmode="numeric" autocomplete="off" required aria-describedby="capHint" />
+            <span class="hint" id="capHint">Just confirming you're human.</span>
+          </div>
+        </div>
+
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+        <button class="btn" type="submit" id="formSubmit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          Send message
+        </button>
+        <p class="hint" style="margin-top:-4px">We'll only use your details to reply. See our <a href="privacy.html" style="color:var(--brand-deep);text-decoration:underline;text-underline-offset:2px;">privacy policy</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="fbrand"><img src="assets/logo-mark.png" alt="" aria-hidden="true" /> Bru Design Studio</div>
+  <div class="fmeta">
+    High-converting websites for businesses of every size.<br/>
+    Free consultations available.
+  </div>
+  <div class="fsoc">
+    <a href="index.html" aria-label="Back to home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    </a>
+  </div>
+</footer>
+<div class="copyright">© 2026 Bru Design Studio. All rights reserved. · <a href="privacy.html">Privacy Policy</a></div>
+
+<script src="main.js?v=5"></script>
+<script>
+  /* ---------- contact form: captcha + honeypot + AJAX submit ---------- */
+  (function(){
+    const form=document.getElementById('contactForm');
+    if(!form)return;
+    const status=document.getElementById('formStatus');
+    const submitBtn=document.getElementById('formSubmit');
+    const capA=document.getElementById('capA'),capB=document.getElementById('capB'),capIn=document.getElementById('f-captcha');
+    let answer=0;
+    function newCaptcha(){const a=Math.floor(Math.random()*8)+1,b=Math.floor(Math.random()*8)+1;answer=a+b;capA.textContent=a;capB.textContent=b;capIn.value='';}
+    newCaptcha();
+
+    function setStatus(msg,type){status.textContent=msg;status.className='form-status show '+type;}
+
+    form.addEventListener('submit',async(e)=>{
+      e.preventDefault();
+      status.className='form-status';
+      // required fields
+      if(!form.name.value.trim()||!form.email.value.trim()||!form.message.value.trim()){
+        setStatus('Please fill in your name, email, and a short message.','err');return;
+      }
+      // captcha
+      if(parseInt(capIn.value,10)!==answer){
+        setStatus('That spam check answer is not quite right. Please try again.','err');newCaptcha();return;
+      }
+      // honeypot (bots tend to tick hidden checkbox)
+      if(form.botcheck.checked){return;}
+
+      const key=form.access_key.value;
+      if(!key||key==='YOUR_WEB3FORMS_ACCESS_KEY'){
+        setStatus('Thanks! This form is not connected to email yet. Add your free Web3Forms access key to start receiving messages.','err');
+        return;
+      }
+
+      submitBtn.disabled=true;const label=submitBtn.innerHTML;submitBtn.textContent='Sending…';
+      try{
+        const data=new FormData(form);
+        const res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data});
+        const out=await res.json();
+        if(out.success){
+          form.reset();newCaptcha();
+          setStatus("Thank you. Your message is on its way — we'll reply within one business day.",'ok');
+        }else{
+          setStatus('Something went wrong sending your message. Please try again in a moment.','err');
+        }
+      }catch(err){
+        setStatus('We could not reach the server. Please check your connection and try again.','err');
+      }finally{
+        submitBtn.disabled=false;submitBtn.innerHTML=label;
+      }
+    });
+  })();
+</script>
+</body>
+</html>

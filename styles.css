@@ -174,7 +174,7 @@ a{color:inherit;text-decoration:none;}
 .s-plumb .eyebrow{color:#2563c0;}
 .s-plumb h4{font-family:"Inter",sans-serif;font-weight:800;letter-spacing:-.02em;color:#16283a;}
 .s-plumb .b-square{background:#2f6fd6;color:#fff;align-self:flex-start;}
-@media(max-width:520px){.s-plumb .right{display:none;}.s-plumb .left{width:100%;}}
+@media(max-width:520px){.s-plumb{flex-direction:column;}.s-plumb .left{width:100%;flex:0 0 auto;}.s-plumb .right{display:block;width:100%;flex:1 1 auto;min-height:44%;}}
 
 .s-travel{background:linear-gradient(140deg,#f0e3c8,#e7d4b0);}
 .s-travel .scrim{background:linear-gradient(0deg,rgba(40,28,14,.3),transparent 55%);}
@@ -654,6 +654,7 @@ footer .fsoc svg{width:19px;height:19px;}
 .gallery .g-modal-cap{padding:clamp(8px,1.5vw,13px) clamp(10px,1.7vw,15px);text-align:center;border-top:1px solid rgba(201,169,106,.32);}
 .gallery .g-modal-k{display:block;font-family:"Inter",sans-serif;font-weight:800;font-size:clamp(7px,.95vw,9px);letter-spacing:.24em;text-transform:uppercase;color:#c9a96a;margin-bottom:4px;}
 .gallery .g-modal-cap b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(13px,1.95vw,18px);color:#fff;line-height:1.12;}
+@media(max-width:560px){.gallery .g-modal{width:clamp(96px,30%,150px);}.gallery .g-modal-img{aspect-ratio:1/1;}}
 
 /* ── CAR WASH (immersive / hardworking) ── */
 .carwash{aspect-ratio:4/3;}

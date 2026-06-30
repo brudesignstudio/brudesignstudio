@@ -1,0 +1,84 @@
+/* ============================================================
+   BRU DESIGN STUDIO — overrides.css
+   Loaded AFTER styles.css, so rules here win.
+   Holds: car-wash timing sync, museum modal reposition + 5s
+   toggle, bigger desktop previews, taller mobile previews.
+   ============================================================ */
+
+/* ---------------------------------------------------------
+   1) SHOWCASE PREVIEWS — bigger on desktop
+   Give the website-mockup column more width on large screens.
+   --------------------------------------------------------- */
+@media (min-width: 901px) {
+  .showcase-case { grid-template-columns: 0.86fr 1.22fr; }
+  .showcase-case.reverse { grid-template-columns: 1.22fr 0.86fr; }
+}
+
+/* ---------------------------------------------------------
+   2) SHOWCASE PREVIEWS — taller on mobile
+   The museum & car-wash scenes pack a lot of absolutely-
+   positioned content; on a short box it overlaps / hides
+   ("things not populating"). Taller boxes give it room.
+   --------------------------------------------------------- */
+@media (max-width: 900px) {
+  .gallery, .carwash { aspect-ratio: 4 / 5; }
+}
+@media (max-width: 560px) {
+  /* content-heavy scenes get a tall portrait box so nothing crowds */
+  .gallery, .carwash { aspect-ratio: 2 / 3; }
+  /* hero showreel mockup also taller on phones */
+  .browser .screen { aspect-ratio: 4 / 5; }
+}
+
+/* ---------------------------------------------------------
+   3) MUSEUM — move "Now on display" directly under the
+   Collection / Visit nav buttons (top-right), and have it
+   appear & disappear on a ~5s-on / 5s-off loop.
+   --------------------------------------------------------- */
+.gallery .g-modal {
+  top: clamp(52px, 16%, 84px);
+  right: clamp(14px, 3vw, 26px);
+  left: auto;
+  transform: translateY(6px) scale(.97);
+}
+.showcase-case.in .g-modal {
+  animation: modalToggle 10s ease-in-out 1.2s infinite;
+}
+@keyframes modalToggle {
+  0%   { opacity: 0; transform: translateY(6px) scale(.97); }
+  5%   { opacity: 1; transform: translateY(0)   scale(1);   }
+  45%  { opacity: 1; transform: translateY(0)   scale(1);   }
+  50%  { opacity: 0; transform: translateY(6px) scale(.97); }
+  100% { opacity: 0; transform: translateY(6px) scale(.97); }
+}
+
+/* ---------------------------------------------------------
+   4) CAR WASH — slow the sliding car and lock it in step
+   with the six wash stages (constant speed, arrives at each
+   stage exactly as that stage lights up).
+   --------------------------------------------------------- */
+.carwash .c-fill { animation: cwFill 10.5s linear infinite; }
+.carwash .c-car  { animation: cwCar  10.5s linear infinite; }
+@keyframes cwFill { 0% { width: 8%; } 82% { width: 95%; } 100% { width: 95%; } }
+@keyframes cwCar  { 0% { left: 8%; } 82% { left: 92%; } 100% { left: 92%; } }
+
+.carwash .c-stages .st { animation: stPulse 10.5s linear infinite; }
+.carwash .c-stages .st-1 { animation-delay: 0s;    }
+.carwash .c-stages .st-2 { animation-delay: 1.71s; }
+.carwash .c-stages .st-3 { animation-delay: 3.42s; }
+.carwash .c-stages .st-4 { animation-delay: 5.13s; }
+.carwash .c-stages .st-5 { animation-delay: 6.84s; }
+.carwash .c-stages .st-6 { animation-delay: 8.55s; }
+@keyframes stPulse {
+  0%   { color: #bfe6ff; }
+  13%  { color: #bfe6ff; }
+  20%  { color: rgba(234,244,255,.45); }
+  100% { color: rgba(234,244,255,.45); }
+}
+
+/* ---------------------------------------------------------
+   5) Reduced-motion: keep the modal in its new spot, visible.
+   --------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .gallery .g-modal { opacity: 1; transform: none; }
+}

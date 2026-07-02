@@ -40,7 +40,10 @@ field. For even stronger protection later, Web3Forms can add hCaptcha.
   `blog-1.jpg`, `blog-post-hero.jpg` (missing images fall back gracefully).
 
 ## Hero showreel photos
-Four example sites rotate in the home hero. Swap their photos by replacing these in `assets/`:
+Five example sites rotate in the home hero: barbershop, plumbing, travel, gym, and a live
+analytics dashboard (the dashboard is pure code — no photo needed). Each slide has a simulated
+cursor that clicks its call-to-action, plus live micro-details (booking slots, dispatch badge,
+rotating trip deals, member counter). Swap the photos by replacing these in `assets/`:
 `shot-barbershop.jpg`, `shot-plumbing.jpg`, `shot-travel.jpg`, `shot-gym.jpg`.
 
 ## Hosting (free)

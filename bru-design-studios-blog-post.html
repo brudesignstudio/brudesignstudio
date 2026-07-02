@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Your Business Needs a Website | Bru Design Studios</title>
+  <meta name="description" content="Over 80% of consumers research online before buying. If your business doesn't have a website, you're invisible. Learn why every business needs one — and how Bru Design Studios can help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg: #F9F8F6;
+      --color-surface: #FFFFFF;
+      --color-text: #1A1A18;
+      --color-muted: #6B6B67;
+      --color-accent: #C4511E;
+      --color-accent-light: #F5EDE8;
+      --color-rule: #E2E0DB;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --max-width: 720px;
+    }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      border-bottom: 1px solid var(--color-rule);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-header .logo {
+      font-family: var(--font-display);
+      font-size: 1.125rem;
+      color: var(--color-text);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .site-header .logo span {
+      color: var(--color-accent);
+    }
+
+    .site-header nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .site-header nav a:hover { color: var(--color-accent); }
+
+    /* ---- Hero / Title block ---- */
+    .post-hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 4rem 2rem 2.5rem;
+    }
+
+    .post-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .post-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      color: var(--color-text);
+      max-width: 600px;
+      margin-bottom: 1.5rem;
+    }
+
+    .post-meta {
+      font-size: 0.875rem;
+      color: var(--color-muted);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .post-divider {
+      max-width: var(--max-width);
+      margin: 0 auto 0;
+      padding: 0 2rem;
+    }
+
+    .post-divider hr {
+      border: none;
+      border-top: 1px solid var(--color-rule);
+    }
+
+    /* ---- Article body ---- */
+    .post-body {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 2rem 5rem;
+    }
+
+    .post-body p {
+      margin-bottom: 1.4rem;
+      color: var(--color-text);
+    }
+
+    .post-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--color-text);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .post-body h2:first-child { margin-top: 0; }
+
+    .post-body section + section { margin-top: 1rem; }
+
+    .post-body hr {
+      border: none;
+      border-top: 1px solid var(--color-rule);
+      margin: 2.5rem 0;
+    }
+
+    .post-body a {
+      color: var(--color-accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .post-body a:hover { opacity: 0.75; }
+
+    /* ---- Pull quote / callout ---- */
+    .callout {
+      background: var(--color-accent-light);
+      border-left: 3px solid var(--color-accent);
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .callout p {
+      margin: 0;
+      font-style: italic;
+      color: var(--color-text);
+    }
+
+    /* ---- CTA block ---- */
+    .post-cta {
+      background: var(--color-text);
+      color: #fff;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .post-cta p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .post-cta .cta-btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 0.8rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .post-cta .cta-btn:hover { opacity: 0.85; }
+
+    /* ---- Footer ---- */
+    .site-footer {
+      border-top: 1px solid var(--color-rule);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--color-muted);
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 600px) {
+      .site-header { padding: 1rem 1.25rem; }
+      .post-hero, .post-divider, .post-body { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .post-hero { padding-top: 2.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="https://www.brudesignstudio.com">Bru <span>Design Studios</span></a>
+    <nav>
+      <a href="https://www.brudesignstudio.com">Visit Our Site</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="post-hero">
+      <span class="post-label">Web Strategy</span>
+      <h1>Why Your Business Needs a Website</h1>
+      <div class="post-meta">
+        <span>Bru Design Studios</span>
+        <span>6 min read</span>
+      </div>
+    </div>
+
+    <div class="post-divider"><hr /></div>
+
+    <article class="post-body">
+
+      <p>You built something real. A service, a product, a team, a reputation. You have done the hard work of actually running a business. But here is a question worth sitting with: when someone who has never heard of you needs exactly what you offer, can they find you?</p>
+
+      <p>If the answer is "probably not" or "I am not sure," that is not a minor gap. That is a fundamental problem. And it is one that thousands of businesses, from solo operators to mid-sized organizations, are losing revenue to every single day without ever knowing it.</p>
+
+      <h2>The World Searches Before It Buys</h2>
+
+      <p>Let us look at what people actually do before spending money. Studies consistently show that over 80% of consumers conduct online research before making a purchase decision. That number is not shrinking. It has been climbing for over a decade and continues to rise as younger generations, who have grown up with the internet as a baseline utility, become the dominant buying demographic.</p>
+
+      <p>When someone needs a plumber, a consultant, a caterer, a nonprofit to donate to, or a law firm to hire, their first move is a search. Not a phone book. Not a referral alone. A search. And what shows up in those results determines who gets the call, the form submission, the sale, or the donation.</p>
+
+      <div class="callout">
+        <p>If your business is not in those results, you are not losing to a competitor with a better product. You are losing to a competitor with a better web presence.</p>
+      </div>
+
+      <p>That is a different and more fixable problem, but only if you recognize it as a problem first.</p>
+
+      <h2>"But I Have Social Media"</h2>
+
+      <p>This is the most common rationalization, and it deserves to be addressed directly.</p>
+
+      <p>Social media accounts are not a substitute for a website. They are not even a close second. Here is why.</p>
+
+      <p>First, you do not own your social media presence. A platform can change its algorithm overnight, bury your content, restrict your reach, or shut down entirely. Businesses that built their entire digital presence on platforms like Vine, MySpace, or Google+ learned this the hard way. Your website, hosted on your own domain, belongs to you.</p>
+
+      <p>Second, social media platforms are designed to keep users on the platform, not to send them to you. The way these platforms monetize their business is by selling advertising. Organic reach has been declining across every major platform for years. Getting found by strangers on social media without paid promotion is increasingly difficult and increasingly unreliable.</p>
+
+      <p>Third, a social media profile does not signal the same level of credibility as a website. When a potential client or customer is deciding whether to trust you with their money, their project, or their cause, a professional website communicates stability and legitimacy in a way that a Facebook page simply does not.</p>
+
+      <h2>The Credibility Gap Is Real</h2>
+
+      <p>There is a cognitive filter that most people apply when evaluating a business for the first time: does this organization look like it takes itself seriously?</p>
+
+      <p>A website is table stakes for answering that question in the affirmative. Without one, a significant portion of your potential audience will not even proceed to the next step. They will move on to whoever looks more established. First impressions in the digital world are made in seconds, and in most cases, that first impression is formed on a website, not in a conversation.</p>
+
+      <p>This applies equally to B2B and B2C contexts. If you are a contractor bidding on a job, a consultant pitching a corporate client, or a nonprofit asking for donations, your digital footprint is evaluated before the conversation even begins. Decision-makers Google organizations before meetings. Donors research nonprofits before giving. Hiring managers look up companies before recommending them to candidates. Procurement teams vet vendors online before adding them to a shortlist.</p>
+
+      <p>Think about your own behavior. When you are about to spend money somewhere new, how often do you look them up first? Almost always. Your customers and clients are doing exactly the same thing when they consider doing business with you.</p>
+
+      <p>A missing or outdated website does not just fail to help you. It actively works against you by filling that credibility gap with doubt. And doubt, in a competitive market, sends people somewhere else.</p>
+
+      <h2>Small and Local Does Not Mean Exempt</h2>
+
+      <p>One of the most persistent myths about web presence is that it only matters for large companies or brands with national reach. This is false, and local search data makes that clear.</p>
+
+      <p>"Near me" searches have grown dramatically over the past several years. When someone in your city searches for what you offer, local results appear prominently. Businesses with websites, complete business listings, and location-specific content consistently outperform businesses without them. For small and local businesses, a strong web presence is not a luxury. It is often the single most cost-effective way to compete with larger players who have bigger advertising budgets.</p>
+
+      <p>Nonprofits and community organizations face a version of this same challenge. Visibility online directly affects donations, volunteer recruitment, grant applications, and community partnerships. The organizations that show up online are the ones that grow. The ones that remain invisible stay stuck.</p>
+
+      <h2>What a Website Actually Does for You</h2>
+
+      <p>A well-built website is not just a brochure. It works for you 24 hours a day, seven days a week, in ways that no single employee or marketing channel can replicate.</p>
+
+      <p>It answers questions before prospects contact you, which means by the time someone reaches out, they are already pre-qualified and more likely to convert. It establishes your positioning, communicates your values, and differentiates you from competitors. It collects leads through contact forms, email sign-ups, and inquiry pages. It provides social proof through testimonials, case studies, and portfolio work. And for e-commerce businesses, it processes transactions entirely on its own.</p>
+
+      <p>A website also gives you data. Unlike a phone call or a walk-in, your website tracks behavior. You can see which pages people visit, how long they stay, where they drop off, and what they click before contacting you. That information is invaluable for understanding what your audience actually cares about and where your messaging is or is not landing.</p>
+
+      <p>Beyond function, a website gives you control over your narrative. Social media and review platforms let other people define your brand. A negative review, a comment thread that spirals, a platform that changes its policies. On those channels, you are a guest. Your website is where you are the host. It is where you define your story, present your work on your terms, and make the case for why someone should choose you without interference from an algorithm or a competitor's ad appearing in the sidebar.</p>
+
+      <h2>The Solution: Bru Design Studios</h2>
+
+      <p>Understanding the problem is one thing. Actually solving it is another, and that is where most businesses get stuck. Between choosing a platform, writing content, navigating design decisions, handling technical setup, and making sure the finished product actually performs in search results, the process can feel overwhelming fast.</p>
+
+      <p><a href="https://www.brudesignstudio.com">Bru Design Studios</a> exists to remove that friction.</p>
+
+      <p>Bru Design Studios is a web design and development studio built to serve businesses and organizations of all sizes. Whether you are launching your first website or overhauling a digital presence that no longer represents where your business is today, Bru Design Studios brings the strategic thinking, design expertise, and technical execution to get it done right.</p>
+
+      <p>The work goes beyond making things look good, though that matters too. Every site built by Bru Design Studios is built with intent: clear structure that guides visitors toward action, visual identity that communicates who you are and earns trust, and technical foundations that give you a real shot at being found in search results.</p>
+
+      <p>For small businesses, that means a professional digital home that levels the playing field against larger competitors. For nonprofits and community organizations, it means a platform that tells your story compellingly and drives real engagement. For growing companies, it means a scalable online presence that can evolve as your needs do.</p>
+
+      <p>Bru Design Studios understands that for most organizations, a website is not just a project. It is an investment with a direct line to growth, revenue, and impact. That is why the approach prioritizes outcomes over aesthetics alone, and strategy over template defaults.</p>
+
+      <h2>The Cost of Waiting</h2>
+
+      <p>Every month without a functional, professional website is a month of missed searches, missed leads, and missed conversions. It is potential customers finding a competitor instead of you. It is credibility quietly eroded by absence. It is a problem that compounds quietly until it becomes undeniable.</p>
+
+      <p>The good news is that it is entirely fixable, and the barrier to getting started is lower than most people expect.</p>
+
+      <p>If your business or organization does not have a website, or has one that is not doing its job, now is the right time to change that. Bru Design Studios is ready to help you build a web presence that works as hard as you do.</p>
+
+      <div class="post-cta">
+        <p>Ready to get started? Let's build a web presence that works as hard as you do.</p>
+        <a class="cta-btn" href="https://www.brudesignstudio.com">Work With Bru Design Studios</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2025 Bru Design Studios. All rights reserved.
+  </footer>
+
+</body>
+</html>

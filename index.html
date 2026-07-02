@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=11" />
+<link rel="stylesheet" href="styles.css?v=13" />
 <!-- preload showcase imagery so the live demos appear instantly, no pop-in -->
 <link rel="preload" as="image" href="assets/showcase-museum.jpg" />
 <link rel="preload" as="image" href="assets/now-on-display.jpg" />
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bru Design Studio | websites that actually sell">
   <meta name="twitter:image" content="https://www.brudesignstudio.com/og-image.png">
-  <link rel="stylesheet" href="/overrides.css">
+  <link rel="stylesheet" href="/overrides.css?v=2">
 </head>
 <body>
 <div class="cursor-dot" aria-hidden="true"></div>
@@ -97,8 +97,10 @@
                 <span class="word">Ironside</span>
                 <span class="eyebrow">Barbershop · Est. 2014</span>
                 <h4>Look sharp. Feel sharper.</h4>
-                <i class="b-outline">Book a chair</i>
+                <div class="slots"><span class="sl-l">Next chair</span><span class="sl">2:30</span><span class="sl">4:15</span><span class="sl">6:00</span></div>
+                <i class="b-outline sim-target">Book a chair</i>
               </div>
+              <span class="sim-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.6 1.4L9 19z" fill="#fff" stroke="rgba(0,0,0,.45)" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
             </div>
             <!-- FlowLine · commercial plumbing -->
             <div class="rh-slide s-plumb">
@@ -106,9 +108,11 @@
                 <div class="brandrow"><span class="d"></span><b>FlowLine</b><span class="nv">Services · Commercial · Contact</span></div>
                 <span class="eyebrow">Commercial plumbing</span>
                 <h4>Commercial plumbing, done right.</h4>
-                <i class="b-square">Request service</i>
+                <span class="live-badge"><span class="live-dot"></span>24/7 dispatch · 38 min avg response</span>
+                <i class="b-square sim-target">Request service</i>
               </div>
               <div class="right"><img class="bg" src="assets/shot-plumbing.jpg" alt="" onerror="this.remove()" /></div>
+              <span class="sim-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.6 1.4L9 19z" fill="#fff" stroke="rgba(0,0,0,.45)" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
             </div>
             <!-- Wander & Co. · travel -->
             <div class="rh-slide s-travel">
@@ -118,8 +122,10 @@
                 <b>Wander &amp; Co.</b>
                 <h4>See the world, beautifully</h4>
                 <span class="price">Bespoke trips from $1,200</span>
-                <i class="b-pill">Plan your trip</i>
+                <span class="dests"><b class="d1">Kyoto · from $1,890</b><b class="d2">Amalfi Coast · from $2,140</b><b class="d3">Bali · from $1,290</b></span>
+                <i class="b-pill sim-target">Plan your trip</i>
               </div>
+              <span class="sim-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.6 1.4L9 19z" fill="#fff" stroke="rgba(0,0,0,.45)" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
             </div>
             <!-- Ironhaus · gym -->
             <div class="rh-slide s-gym">
@@ -129,8 +135,34 @@
               <div class="c">
                 <span class="eyebrow">Strength gym</span>
                 <h4>Train loud. Live strong.</h4>
-                <i class="b-bar">Join now</i>
+                <span class="gym-live"><svg class="ekg" viewBox="0 0 32 13" aria-hidden="true"><path d="M0 7h7l3-5 4 9 3-6 2 2h13"/></svg><b><span data-count="312">312</span></b>&nbsp;training now</span>
+                <i class="b-bar sim-target">Join now</i>
               </div>
+              <span class="sim-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.6 1.4L9 19z" fill="#fff" stroke="rgba(0,0,0,.45)" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+            </div>
+            <!-- Northstar · analytics dashboard -->
+            <div class="rh-slide s-dash">
+              <div class="dash-gridlines" aria-hidden="true"></div>
+              <div class="dash-head">
+                <span class="d-logo"><i></i>NORTHSTAR</span>
+                <span class="d-nav">Overview · Traffic · Revenue</span>
+                <span class="d-live"><i></i>LIVE</span>
+              </div>
+              <div class="dash-kpis">
+                <div class="kpi"><small>Revenue</small><b>$<span data-count="48.2" data-dec="1">48.2</span>k</b><span class="up">▲ 12.4%</span></div>
+                <div class="kpi"><small>Visitors</small><b><span data-count="12480">12,480</span></b><span class="up">▲ 8.1%</span></div>
+                <div class="kpi"><small>Conversion</small><b><span data-count="4.8" data-dec="1">4.8</span>%</b><span class="up">▲ 1.9%</span></div>
+              </div>
+              <div class="dash-chart">
+                <svg viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true">
+                  <defs><linearGradient id="dashFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#39d5c8" stop-opacity=".32"/><stop offset="1" stop-color="#39d5c8" stop-opacity="0"/>
+                  </linearGradient></defs>
+                  <path class="area" d="M0,78 C30,70 45,52 75,55 C105,58 120,34 150,36 C180,38 195,20 225,24 C255,28 270,12 300,10 L300,90 L0,90 Z" fill="url(#dashFill)"/>
+                  <path class="line" d="M0,78 C30,70 45,52 75,55 C105,58 120,34 150,36 C180,38 195,20 225,24 C255,28 270,12 300,10"/>
+                </svg>
+              </div>
+              <div class="dash-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
             </div>
           </div>
           <div class="rh-ticker"><div class="tk" id="reelTicker"></div></div>
@@ -173,18 +205,22 @@
           <div class="scene gallery" role="img" aria-label="Animated preview of a premium museum website: the camera slowly glides through an immersive dark gallery while a centered modal announces the current exhibition, The Dan Ondrasek Exhibit.">
             <img class="s-bg" decoding="async" src="assets/showcase-museum.jpg" alt="" aria-hidden="true" />
             <div class="g-grade"></div>
+            <div class="g-sweep" aria-hidden="true"></div>
             <div class="s-nav">
               <span class="s-name">MERIDIAN<small>Museum of Modern Art</small></span>
               <span class="s-links"><b>Exhibitions</b><b>Collection</b><b>Visit</b></span>
             </div>
             <div class="g-modal">
+              <span class="g-modal-x" aria-hidden="true">✕</span>
               <div class="g-modal-img"><img decoding="async" src="assets/now-on-display.jpg" alt="Painting featured in The Dan Ondrasek Exhibit" /></div>
               <div class="g-modal-cap"><span class="g-modal-k">Now on display</span><b>The Dan Ondrasek Exhibit</b></div>
             </div>
             <div class="g-info">
+              <span class="g-open"><i></i>Open now</span>
               <span class="g-eyebrow">The Meridian · Downtown</span>
               <span class="g-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Open Tue – Sun · 10am – 6pm</span>
             </div>
+            <i class="g-tickets">Reserve tickets</i>
           </div>
         </figure>
         <div class="chips"><span>Immersive</span><span>Cinematic motion</span><span>Bespoke design</span></div>
@@ -235,6 +271,8 @@
           <div class="scene carwash" role="img" aria-label="Animated preview of a car wash website: a car advances through the wash stages — pre-soak, foam bath, scrub, rinse, shield wax and air dry — alongside three service plans.">
             <img class="s-bg" decoding="async" src="assets/showcase-carwash.jpeg" alt="" aria-hidden="true" />
             <div class="c-grade"></div>
+            <div class="c-bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <span class="c-live"><i></i><b data-live-count="1284">1,284</b>&nbsp;washes this week</span>
             <div class="s-nav">
               <span class="s-name">RIPTIDE<small>Express Car Wash</small></span>
               <span class="s-links"><b>Wash Plans</b><b>Memberships</b><b>Locations</b></span>
@@ -306,7 +344,7 @@
         <div class="fbar"><span class="dot" style="background:#d9a05f"></span><span class="dot" style="background:#e6c486"></span><span class="dot" style="background:#bda079"></span>
           <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Selected project preview</span></div>
         <div class="reel" role="img" aria-label="An animated preview of the Reclaiming Our Downtown website: a hand-drawn sketch of a city downtown washes into full color, then into a glowing nighttime scene.">
-          <span class="stage-lbl" aria-hidden="true">Sketch · Color · Night</span>
+          <span class="stage-lbl phase-lbl" aria-hidden="true"><b class="ph ph-1">Sketch</b><b class="ph ph-2">Color</b><b class="ph ph-3">Night</b></span>
           <img class="l-sketch" src="assets/dt-sketch.jpg" alt="" aria-hidden="true" />
           <img class="l-color" src="assets/dt-color.jpg" alt="" aria-hidden="true" />
           <img class="l-night" src="assets/dt-night.jpg" alt="" aria-hidden="true" />
@@ -445,19 +483,22 @@
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<script src="main.js?v=5"></script>
+<script src="main.js?v=7"></script>
 <script>
   /* ---------- hero showreel + ticker ---------- */
   (function(){
     const slides=[...document.querySelectorAll('#reelHero .rh-slide')];
-    const words=['Conversion-first','Cinematic','Mobile-first','Interactive','Built fast','Fully custom','SEO-ready','On-brand'];
+    const words=['Conversion-first','Cinematic','Mobile-first','Interactive','Live dashboards','Built fast','Fully custom','SEO-ready','On-brand'];
     const tk=document.getElementById('reelTicker');
     if(tk){const make=()=>words.map(w=>`<span>${w}</span>`).join('');tk.innerHTML=make()+make();}
     if(!slides.length)return;
-    function show(n){slides.forEach((s,k)=>s.classList.toggle('active',k===n));}
+    function show(n){
+      slides.forEach((s,k)=>s.classList.toggle('active',k===n));
+      if(window.bruCountUp)slides[n].querySelectorAll('[data-count]').forEach(el=>window.bruCountUp(el));
+    }
     show(0);
     if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-    let i=0;setInterval(()=>{i=(i+1)%slides.length;show(i);},3400);
+    let i=0;setInterval(()=>{i=(i+1)%slides.length;show(i);},4600);
   })();
 
   /* ---------- capabilities ---------- */

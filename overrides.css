@@ -30,33 +30,52 @@
   .browser .screen { aspect-ratio: 4 / 5; }
   /* case-study downtown reel: elongate from the wide 2:1 strip */
   .reel { aspect-ratio: 4 / 5; }
-  /* car wash: show ALL three plan pills (Express / Deluxe / Ultimate),
-     let them wrap and shrink so they fit on a narrow screen */
-  .carwash .c-plans { flex-wrap: wrap; justify-content: flex-end; gap: 6px; max-width: 80%; }
+  /* car wash: ALL three plan pills (Express / Deluxe / Ultimate) on ONE line —
+     span the scene's width, center them, shrink type so they never wrap */
+  .carwash .c-plans { left: clamp(10px, 3vw, 28px); right: clamp(10px, 3vw, 28px);
+    justify-content: center; flex-wrap: nowrap; gap: 5px; max-width: none; }
   .carwash .c-plans .pl:not(.feat) { display: flex; }
-  .carwash .c-plans .pl { padding: 6px 10px; }
+  .carwash .c-plans .pl { padding: 5px 9px; font-size: 8.5px; gap: 4px;
+    white-space: nowrap; flex: 0 1 auto; min-width: 0; }
 }
 
 /* ---------------------------------------------------------
-   3) MUSEUM — move "Now on display" directly under the
-   Collection / Visit nav buttons (top-right), and have it
-   appear & disappear on a ~5s-on / 5s-off loop.
+   3) MUSEUM — the "Now on display" exhibit card behaves like
+   an ad popup: springs in top-right with an overshoot bounce,
+   stays ~4 seconds, pops away, returns ~9 seconds later.
    --------------------------------------------------------- */
 .gallery .g-modal {
   top: clamp(52px, 16%, 84px);
   right: clamp(14px, 3vw, 26px);
   left: auto;
-  transform: translateY(6px) scale(.97);
+  width: clamp(140px, 30%, 230px);
+  transform: translateY(16px) scale(.5);
+  transform-origin: top right;
 }
 .showcase-case.in .g-modal {
-  animation: modalToggle 10s ease-in-out 1.2s infinite;
+  animation: modalAd 13s cubic-bezier(.22,.61,.36,1) 1.4s infinite;
 }
-@keyframes modalToggle {
-  0%   { opacity: 0; transform: translateY(6px) scale(.97); }
-  5%   { opacity: 1; transform: translateY(0)   scale(1);   }
-  45%  { opacity: 1; transform: translateY(0)   scale(1);   }
-  50%  { opacity: 0; transform: translateY(6px) scale(.97); }
-  100% { opacity: 0; transform: translateY(6px) scale(.97); }
+@keyframes modalAd {
+  0%    { opacity: 0; transform: translateY(16px) scale(.5); }
+  3.5%  { opacity: 1; transform: translateY(-4px) scale(1.07); }
+  5.5%  { opacity: 1; transform: translateY(1px)  scale(.99); }
+  7%    { opacity: 1; transform: translateY(0)    scale(1); }
+  30%   { opacity: 1; transform: translateY(0)    scale(1); }
+  34%   { opacity: 0; transform: translateY(10px) scale(.7); }
+  100%  { opacity: 0; transform: translateY(10px) scale(.7); }
+}
+/* keep the popup modest on phones */
+@media (max-width: 560px) {
+  .gallery .g-modal { width: clamp(110px, 34%, 150px); }
+}
+/* ad-style close button (decorative) */
+.gallery .g-modal-x {
+  position: absolute; top: 5px; right: 5px; z-index: 2;
+  width: 16px; height: 16px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: "Inter", sans-serif; font-size: 8.5px; font-weight: 700; line-height: 1;
+  color: rgba(255,255,255,.85); background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.28);
 }
 
 /* ---------------------------------------------------------

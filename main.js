@@ -107,7 +107,7 @@
       splitWords(h1);
 
       const tl = gsap.timeline({ delay: 0.1 });
-      tl.from('.hero h1 .hw', { y: '108%', duration: 0.88, stagger: 0.065, ease: 'power3.out' })
+      tl.from('.hero h1 .hw', { y: '135%', duration: 0.88, stagger: 0.065, ease: 'power3.out' })
         .from('.hero .tag', { opacity: 0, y: 16, duration: 0.6, ease: 'power2.out' }, 0.05)
         .from('.hero-sub', { opacity: 0, y: 20, duration: 0.75, ease: 'power2.out' }, 0.42)
         .from('.hero-actions > *', { opacity: 0, y: 16, duration: 0.6, stagger: 0.1, ease: 'power2.out' }, 0.62)
@@ -123,7 +123,7 @@
       const tl = gsap.timeline({ delay: 0.1 });
       if (h1) {
         splitWords(h1);
-        tl.from(h1.querySelectorAll('.hw'), { y: '108%', duration: 0.85, stagger: 0.06, ease: 'power3.out' });
+        tl.from(h1.querySelectorAll('.hw'), { y: '135%', duration: 0.85, stagger: 0.06, ease: 'power3.out' });
       }
       const rest = hero.querySelectorAll(':scope > *:not(h1)');
       if (rest.length) tl.from(rest, { opacity: 0, y: 18, duration: 0.6, stagger: 0.09, ease: 'power2.out' }, 0.3);
@@ -135,7 +135,7 @@
       const words = h.querySelectorAll('.hw');
       if (!words.length) return;
       gsap.from(words, {
-        y: '112%', duration: 0.8, stagger: 0.05, ease: 'power3.out',
+        y: '135%', duration: 0.8, stagger: 0.05, ease: 'power3.out',
         scrollTrigger: { trigger: h, start: 'top 88%', once: true }
       });
     });

@@ -558,8 +558,12 @@ footer .fsoc svg{width:19px;height:19px;}
 .sig-ribbon{background:linear-gradient(90deg,var(--brand-deep),var(--brand))!important;color:#fff!important;}
 @media(max-width:880px){.plan.signature{transform:none;}}
 
-/* ── word-split hero animation ── */
-.hw-wrap{display:inline-block;overflow:hidden;vertical-align:bottom;}
+/* ── word-split heading animation ──
+   Each word rises inside an overflow mask. The padding + matching
+   negative margins give serif descenders (g, y, p) and italic
+   overhangs room so glyphs never get clipped, without moving layout. */
+.hw-wrap{display:inline-block;overflow:hidden;vertical-align:bottom;
+  padding:.08em .12em .22em .04em;margin:-.08em -.12em -.22em -.04em;}
 .hw{display:inline-block;}
 
 /* ── capability card 3D hover ── */

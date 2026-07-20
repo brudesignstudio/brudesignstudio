@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gallery · 1 Marisol Point — Demo Listing by Bru Design Studio</title>
+<meta name="description" content="The full photo gallery of 1 Marisol Point — twilight exteriors, editorial interiors, amenities and aerial stills. Part of Bru Design Studio's demo single-property website." />
+<meta name="theme-color" content="#0e0803" />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="marisol.css?v=1" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body data-page="gallery">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="bru-ribbon">
+  <b>Demo listing</b>
+  <span>This entire site is the product — everything you see ships with your listing.</span>
+  <a href="index.html">← Bru Design Studio</a>
+  <a href="contact.html">Get one for your listing →</a>
+</div>
+
+<nav class="est-nav" aria-label="Property">
+  <a class="est-brand" href="real-estate.html">
+    <span class="nm">1 Marisol Point</span>
+    <span class="lc">Malibu · California</span>
+  </a>
+  <div class="est-links" id="estLinks">
+    <a href="real-estate.html#residence">Residence</a>
+    <a href="marisol-gallery.html" aria-current="page">Gallery</a>
+    <a href="real-estate.html#film">Film</a>
+    <a href="marisol-floorplan.html">Floorplan</a>
+    <a href="real-estate.html#location">Location</a>
+    <a href="marisol-brochure.html">Brochure</a>
+    <a class="nav-book" href="real-estate.html#showing">Schedule Showing</a>
+  </div>
+  <button class="est-burger" aria-expanded="false" aria-controls="estLinks" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <span class="crumb"><a href="real-estate.html">1 Marisol Point</a> · The Gallery</span>
+    <h1>The Gallery</h1>
+    <p>Sixteen frames from twilight to first light. Click any photo to view it full screen —
+      on a live listing these are the photographer's finals, delivered in 4K.</p>
+  </header>
+
+  <div class="gal-filters" role="group" aria-label="Filter photos">
+    <button class="on" data-f="all" aria-pressed="true">All</button>
+    <button data-f="ext" aria-pressed="false">Exteriors</button>
+    <button data-f="int" aria-pressed="false">Interiors</button>
+    <button data-f="amen" aria-pressed="false">Amenities</button>
+    <button data-f="air" aria-pressed="false">Aerial</button>
+  </div>
+
+  <div class="gal-grid" data-lb>
+    <figure class="ph wide" data-cat="ext" aria-label="Front elevation at twilight">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnExt"/></svg>
+      <img src="assets/marisol/hero-twilight.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">hero-twilight.jpg</span>
+      <figcaption class="cap">Twilight · Front Elevation</figcaption>
+    </figure>
+    <figure class="ph" data-cat="ext" aria-label="Entry with pivot door">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnExt"/></svg>
+      <img src="assets/marisol/exterior-entry.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">exterior-entry.jpg</span>
+      <figcaption class="cap">The Entry</figcaption>
+    </figure>
+    <figure class="ph" data-cat="ext" aria-label="Rear elevation over the pool">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnPool"/></svg>
+      <img src="assets/marisol/exterior-rear.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">exterior-rear.jpg</span>
+      <figcaption class="cap">Rear Elevation</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Great room">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnInt"/></svg>
+      <img src="assets/marisol/great-room.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">great-room.jpg</span>
+      <figcaption class="cap">Great Room</figcaption>
+    </figure>
+    <figure class="ph wide" data-cat="int" aria-label="Chef's kitchen">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnKit"/></svg>
+      <img src="assets/marisol/kitchen.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">kitchen.jpg</span>
+      <figcaption class="cap">Chef's Kitchen</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Dining room">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnKit"/></svg>
+      <img src="assets/marisol/dining.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">dining.jpg</span>
+      <figcaption class="cap">Dining</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Primary suite">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnBed"/></svg>
+      <img src="assets/marisol/primary-suite.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">primary-suite.jpg</span>
+      <figcaption class="cap">Primary Suite</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Primary spa bath">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnBath"/></svg>
+      <img src="assets/marisol/primary-bath.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">primary-bath.jpg</span>
+      <figcaption class="cap">Spa Bath</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Office">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnInt"/></svg>
+      <img src="assets/marisol/office.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">office.jpg</span>
+      <figcaption class="cap">The Study</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Guest suite">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnBed"/></svg>
+      <img src="assets/marisol/guest-suite.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">guest-suite.jpg</span>
+      <figcaption class="cap">Guest Suite</figcaption>
+    </figure>
+    <figure class="ph" data-cat="amen" aria-label="Cinema">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnCin"/></svg>
+      <img src="assets/marisol/cinema.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">cinema.jpg</span>
+      <figcaption class="cap">12-Seat Cinema</figcaption>
+    </figure>
+    <figure class="ph" data-cat="amen" aria-label="Wine cellar">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnCellar"/></svg>
+      <img src="assets/marisol/wine-cellar.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">wine-cellar.jpg</span>
+      <figcaption class="cap">600-Bottle Cellar</figcaption>
+    </figure>
+    <figure class="ph" data-cat="amen" aria-label="Gym and spa">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnBath"/></svg>
+      <img src="assets/marisol/gym-spa.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">gym-spa.jpg</span>
+      <figcaption class="cap">Wellness Wing</figcaption>
+    </figure>
+    <figure class="ph wide" data-cat="amen" aria-label="Pool terrace at dusk">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnPool"/></svg>
+      <img src="assets/marisol/pool-terrace.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">pool-terrace.jpg</span>
+      <figcaption class="cap">Pool Terrace</figcaption>
+    </figure>
+    <figure class="ph" data-cat="air" aria-label="Aerial view of the estate">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnAir"/></svg>
+      <img src="assets/marisol/aerial-estate.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">aerial-estate.jpg</span>
+      <figcaption class="cap">The Estate From Above</figcaption>
+    </figure>
+    <figure class="ph" data-cat="air" aria-label="Aerial view of the coastline">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnAir"/></svg>
+      <img src="assets/marisol/aerial-coastline.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">aerial-coastline.jpg</span>
+      <figcaption class="cap">The Coastline</figcaption>
+    </figure>
+  </div>
+
+  <div class="gal-cta" style="padding-bottom:clamp(60px,9vh,100px);">
+    <a class="btn-gold" href="real-estate.html#showing">Schedule a private showing</a>
+  </div>
+</main>
+
+<footer class="est-footer">
+  <div class="legal" style="border-top:none;">
+    1 Marisol Point is a fictional property created by <a href="index.html">Bru Design Studio</a> to demonstrate a single-property
+    website. Equal Housing Opportunity. · <a href="real-estate.html">Back to the listing</a> · © 2026 Bru Design Studio
+  </div>
+</footer>
+
+<script src="marisol.js?v=1"></script>
+</body>
+</html>

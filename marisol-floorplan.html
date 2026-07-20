@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Floorplan &amp; 3D Tour · 1 Marisol Point — Demo Listing by Bru Design Studio</title>
+<meta name="description" content="Interactive floorplans and 3D virtual tour of 1 Marisol Point — main and upper levels, room by room. Part of Bru Design Studio's demo single-property website." />
+<meta name="theme-color" content="#0e0803" />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="marisol.css?v=1" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body data-page="floorplan">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="bru-ribbon">
+  <b>Demo listing</b>
+  <span>This entire site is the product — everything you see ships with your listing.</span>
+  <a href="index.html">← Bru Design Studio</a>
+  <a href="contact.html">Get one for your listing →</a>
+</div>
+
+<nav class="est-nav" aria-label="Property">
+  <a class="est-brand" href="real-estate.html">
+    <span class="nm">1 Marisol Point</span>
+    <span class="lc">Malibu · California</span>
+  </a>
+  <div class="est-links" id="estLinks">
+    <a href="real-estate.html#residence">Residence</a>
+    <a href="marisol-gallery.html">Gallery</a>
+    <a href="real-estate.html#film">Film</a>
+    <a href="marisol-floorplan.html" aria-current="page">Floorplan</a>
+    <a href="real-estate.html#location">Location</a>
+    <a href="marisol-brochure.html">Brochure</a>
+    <a class="nav-book" href="real-estate.html#showing">Schedule Showing</a>
+  </div>
+  <button class="est-burger" aria-expanded="false" aria-controls="estLinks" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <span class="crumb"><a href="real-estate.html">1 Marisol Point</a> · Floorplan &amp; 3D Tour</span>
+    <h1>The Plans</h1>
+    <p>12,400 square feet across two levels, drawn to scale. Choose a level, then tap any room
+      to locate it on the plan — buyers arrange their lives here before they ever visit.</p>
+  </header>
+
+  <section class="wrap tight" aria-label="Interactive floorplan" style="padding-top:0;">
+    <div class="plan-shell" id="planShell">
+      <div class="lvl-tabs" role="group" aria-label="Choose level">
+        <button data-lvl="main" class="on" aria-pressed="true">Main Level</button>
+        <button data-lvl="upper" aria-pressed="false">Upper Level</button>
+      </div>
+      <div class="plane">
+        <div class="lvl on" data-lvl="main"><svg preserveAspectRatio="xMidYMid slice" role="img" aria-label="Main level floorplan"><use href="#scnPlan"/></svg></div>
+        <div class="lvl" data-lvl="upper"><svg preserveAspectRatio="xMidYMid slice" role="img" aria-label="Upper level floorplan"><use href="#scnPlan2"/></svg></div>
+        <span class="plan-ping" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="plan-cols">
+      <div style="padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:14px;background:var(--bg);">
+        <span class="eyebrow">Room by room</span>
+        <p style="font-size:14.5px;line-height:1.75;color:var(--ink-dim);max-width:52ch;">Every room, to scale, with true
+          dimensions. On a live listing these plans are redrawn from the architect's files in the site's own style — and a
+          printable PDF is one click away.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+          <button class="btn-line" type="button" data-demo-note="On a live listing, this downloads the full architectural plan set as a PDF.">Download plan PDF</button>
+          <a class="btn-line" href="#vr">Jump to 3D tour</a>
+        </div>
+      </div>
+      <div class="room-list" aria-label="Rooms">
+        <h3>Select a room</h3>
+        <div data-lvl="main">
+          <button data-x="34" data-y="32" data-lvl="main"><span class="rn">Great Room</span><span class="rs">1,240 sqft</span></button>
+          <button data-x="57" data-y="30" data-lvl="main"><span class="rn">Chef's Kitchen</span><span class="rs">860 sqft</span></button>
+          <button data-x="72" data-y="24" data-lvl="main"><span class="rn">Gallery Hall</span><span class="rs">620 sqft</span></button>
+          <button data-x="34" data-y="64" data-lvl="main"><span class="rn">Cinema</span><span class="rs">12 seats</span></button>
+          <button data-x="55" data-y="63" data-lvl="main"><span class="rn">Spa Bath</span><span class="rs">380 sqft</span></button>
+          <button data-x="72" data-y="63" data-lvl="main"><span class="rn">Primary Suite</span><span class="rs">1,150 sqft</span></button>
+          <button data-x="37" data-y="82" data-lvl="main"><span class="rn">Infinity Pool</span><span class="rs">75 ft</span></button>
+          <button data-x="67" data-y="82" data-lvl="main"><span class="rn">Ocean Terrace</span><span class="rs">1,400 sqft</span></button>
+        </div>
+        <div data-lvl="upper" style="display:none;">
+          <button data-x="34" data-y="30" data-lvl="upper"><span class="rn">Guest Suite I</span><span class="rs">640 sqft</span></button>
+          <button data-x="50" data-y="29" data-lvl="upper"><span class="rn">Guest Suite II</span><span class="rs">610 sqft</span></button>
+          <button data-x="67" data-y="29" data-lvl="upper"><span class="rn">Guest Suite III</span><span class="rs">580 sqft</span></button>
+          <button data-x="34" data-y="55" data-lvl="upper"><span class="rn">Library</span><span class="rs">520 sqft</span></button>
+          <button data-x="51" data-y="56" data-lvl="upper"><span class="rn">Gym &amp; Spa</span><span class="rs">720 sqft</span></button>
+          <button data-x="67" data-y="56" data-lvl="upper"><span class="rn">Media Lounge</span><span class="rs">560 sqft</span></button>
+          <button data-x="50" data-y="73" data-lvl="upper"><span class="rn">Ocean Deck</span><span class="rs">900 sqft</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="vr" aria-labelledby="vr-h">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Virtual Tour</span>
+      <h2 id="vr-h">Walk through from <em>anywhere on earth.</em></h2>
+      <p>For the buyer in London or Hong Kong who's ready to move — a full 3D walkthrough, embedded right here.</p>
+    </div>
+    <div class="vr-block reveal">
+      <figure class="ph" aria-label="3D virtual tour preview">
+        <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnInt"/></svg>
+        <img src="assets/marisol/vr-tour-preview.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+        <span class="ph-chip">vr-tour-preview.jpg</span>
+        <figcaption class="cap">3D Walkthrough Preview</figcaption>
+      </figure>
+      <div class="vr-copy">
+        <span class="eyebrow">How it works</span>
+        <p>On a live listing, your Matterport or iGuide capture embeds directly on this page — room-to-room navigation,
+          dollhouse view and measurement mode included. Out-of-town buyers tour the home at midnight in their own time zone;
+          serious ones book the in-person showing.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-gold" type="button" data-demo-note="On a live listing, the 3D walkthrough (Matterport / iGuide) launches right here.">Launch 3D tour</button>
+          <a class="btn-line" href="real-estate.html#showing">Book the real thing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="est-footer">
+  <div class="legal" style="border-top:none;">
+    1 Marisol Point is a fictional property created by <a href="index.html">Bru Design Studio</a> to demonstrate a single-property
+    website. Equal Housing Opportunity. · <a href="real-estate.html">Back to the listing</a> · © 2026 Bru Design Studio
+  </div>
+</footer>
+
+<script src="marisol.js?v=1"></script>
+</body>
+</html>

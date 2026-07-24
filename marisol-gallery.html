@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gallery · 1 Marisol Point — Demo Listing by Bru Design Studio</title>
-<meta name="description" content="The full photo gallery of 1 Marisol Point — twilight exteriors, editorial interiors, amenities and aerial stills. Part of Bru Design Studio's demo single-property website." />
+<title>Gallery · 1 Marisol Point · Demo Listing by Bru Design Studio</title>
+<meta name="description" content="The full photo gallery of 1 Marisol Point: twilight exteriors, editorial interiors, amenities and aerial stills. Part of Bru Design Studio's demo single-property website." />
 <meta name="theme-color" content="#0e0803" />
 <meta name="robots" content="noindex" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="marisol.css?v=1" />
+<link rel="stylesheet" href="marisol.css?v=8" />
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
@@ -19,14 +19,14 @@
 
 <div class="bru-ribbon">
   <b>Demo listing</b>
-  <span>This entire site is the product — everything you see ships with your listing.</span>
+  <span>This entire site is the product: everything you see ships with your listing.</span>
   <a href="index.html">← Bru Design Studio</a>
   <a href="contact.html">Get one for your listing →</a>
 </div>
 
 <nav class="est-nav" aria-label="Property">
   <a class="est-brand" href="real-estate.html">
-    <span class="nm">1 Marisol Point</span>
+    <span class="nm"><span class="num">1</span> Marisol Point</span>
     <span class="lc">Malibu · California</span>
   </a>
   <div class="est-links" id="estLinks">
@@ -47,8 +47,8 @@
   <header class="page-head">
     <span class="crumb"><a href="real-estate.html">1 Marisol Point</a> · The Gallery</span>
     <h1>The Gallery</h1>
-    <p>Sixteen frames from twilight to first light. Click any photo to view it full screen —
-      on a live listing these are the photographer's finals, delivered in 4K.</p>
+    <p>Eighteen frames from twilight to first light. Click any photo to view it full screen.
+      On a live listing these are the photographer's finals, delivered in 4K.</p>
   </header>
 
   <div class="gal-filters" role="group" aria-label="Filter photos">
@@ -84,6 +84,12 @@
       <span class="ph-chip">great-room.jpg</span>
       <figcaption class="cap">Great Room</figcaption>
     </figure>
+    <figure class="ph" data-cat="amen" aria-label="Gallery garage">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnExt"/></svg>
+      <img src="assets/marisol/gallery-garage.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">gallery-garage.jpg</span>
+      <figcaption class="cap">Gallery Garage</figcaption>
+    </figure>
     <figure class="ph wide" data-cat="int" aria-label="Chef's kitchen">
       <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnKit"/></svg>
       <img src="assets/marisol/kitchen.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
@@ -95,6 +101,12 @@
       <img src="assets/marisol/dining.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
       <span class="ph-chip">dining.jpg</span>
       <figcaption class="cap">Dining</figcaption>
+    </figure>
+    <figure class="ph" data-cat="int" aria-label="Wet bar">
+      <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnKit"/></svg>
+      <img src="assets/marisol/wet-bar.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
+      <span class="ph-chip">wet-bar.jpg</span>
+      <figcaption class="cap">The Wet Bar</figcaption>
     </figure>
     <figure class="ph" data-cat="int" aria-label="Primary suite">
       <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnBed"/></svg>
@@ -124,7 +136,7 @@
       <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnCin"/></svg>
       <img src="assets/marisol/cinema.jpg" alt="" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.parentElement.classList.add('missing');this.remove()">
       <span class="ph-chip">cinema.jpg</span>
-      <figcaption class="cap">12-Seat Cinema</figcaption>
+      <figcaption class="cap">10-Seat Cinema</figcaption>
     </figure>
     <figure class="ph" data-cat="amen" aria-label="Wine cellar">
       <svg class="ph-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#scnCellar"/></svg>
@@ -170,6 +182,6 @@
   </div>
 </footer>
 
-<script src="marisol.js?v=1"></script>
+<script src="marisol.js?v=5"></script>
 </body>
 </html>

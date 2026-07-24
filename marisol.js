@@ -263,44 +263,71 @@
   '<symbol id="scnPlan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">' +
   '<rect width="1600" height="900" fill="#f7ead0"/>' +
   '<g stroke="#2e2418" opacity=".05"><path d="M0,150 H1600 M0,300 H1600 M0,450 H1600 M0,600 H1600 M0,750 H1600 M200,0 V900 M400,0 V900 M600,0 V900 M800,0 V900 M1000,0 V900 M1200,0 V900 M1400,0 V900"/></g>' +
-  '<rect x="340" y="150" width="920" height="540" fill="#fcf5e7" stroke="#2e2418" stroke-width="10"/>' +
-  '<g stroke="#2e2418" stroke-width="6"><line x1="760" y1="150" x2="760" y2="420"/><line x1="760" y1="500" x2="760" y2="690"/><line x1="340" y1="470" x2="620" y2="470"/><line x1="700" y1="470" x2="760" y2="470"/><line x1="1060" y1="150" x2="1060" y2="300"/><line x1="1060" y1="380" x2="1060" y2="470"/><line x1="760" y1="470" x2="980" y2="470"/><line x1="1060" y1="470" x2="1260" y2="470"/></g>' +
-  '<g fill="none" stroke="#7e5a2b" stroke-width="2.5"><path d="M760,420 A80,80 0 0 1 840,500" opacity=".7"/><path d="M660,470 A60,60 0 0 0 700,410" opacity=".7"/><path d="M1060,300 A80,80 0 0 1 980,380" opacity=".7" transform="translate(2040,0) scale(-1,1)"/></g>' +
-  '<g fill="none" stroke="#7e5a2b" stroke-width="3"><rect x="420" y="240" width="200" height="60" rx="10"/><rect x="440" y="320" width="160" height="46" rx="8"/><circle cx="560" cy="410" r="4" fill="#7e5a2b"/></g>' +
-  '<g fill="none" stroke="#7e5a2b" stroke-width="3"><rect x="830" y="230" width="170" height="52" rx="6"/><rect x="810" y="330" width="200" height="60" rx="30"/><circle cx="840" cy="316" r="9"/><circle cx="890" cy="312" r="9"/><circle cx="940" cy="312" r="9"/><circle cx="984" cy="316" r="9"/><circle cx="840" cy="404" r="9"/><circle cx="890" cy="408" r="9"/><circle cx="940" cy="408" r="9"/><circle cx="984" cy="404" r="9"/></g>' +
-  '<g stroke="#7e5a2b" stroke-width="3" fill="none"><rect x="1090" y="520" width="130" height="120" rx="8"/><rect x="1102" y="532" width="46" height="26" rx="6"/><rect x="1162" y="532" width="46" height="26" rx="6"/><line x1="1090" y1="572" x2="1220" y2="572"/></g>' +
-  '<g stroke="#7e5a2b" stroke-width="3" fill="none"><ellipse cx="850" cy="580" rx="56" ry="30"/><rect x="940" y="540" width="30" height="70" rx="8"/></g>' +
-  '<g><rect x="340" y="700" width="920" height="90" fill="none" stroke="#7e5a2b" stroke-width="3" stroke-dasharray="12 10"/><rect x="420" y="716" width="340" height="58" rx="12" fill="#bfe0e4" stroke="#5d99a4" stroke-width="3" opacity=".85"/><g fill="#7e5a2b" opacity=".7"><rect x="800" y="722" width="14" height="46" rx="4"/><rect x="824" y="722" width="14" height="46" rx="4"/><rect x="848" y="722" width="14" height="46" rx="4"/></g></g>' +
-  '<g fill="#6b5a40" font-family="Inter,sans-serif" font-size="17" font-weight="700" letter-spacing="3.5" text-anchor="middle"><text x="540" y="212">GREAT ROOM</text><text x="910" y="205">CHEF\'S KITCHEN</text><text x="1160" y="220" font-size="15">GALLERY</text><text x="540" y="590">CINEMA</text><text x="890" y="520" font-size="15">SPA BATH</text><text x="1155" y="505">PRIMARY SUITE</text><text x="590" y="745" font-size="15" fill="#5d99a4">INFINITY POOL</text><text x="1080" y="745" font-size="15">OCEAN TERRACE</text></g>' +
-  '<g stroke="#7e5a2b" stroke-width="2" opacity=".8"><line x1="340" y1="118" x2="1260" y2="118"/><line x1="340" y1="108" x2="340" y2="128"/><line x1="1260" y1="108" x2="1260" y2="128"/></g>' +
-  '<text x="800" y="106" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="15" font-weight="700" letter-spacing="2" text-anchor="middle">124\'-6&quot;</text>' +
-  '<g font-family="Inter,sans-serif" fill="#6b5a40"><text x="1330" y="806" font-size="15" font-weight="800" letter-spacing="3">1 MARISOL POINT</text><text x="1330" y="830" font-size="12.5" font-weight="600" letter-spacing="2.5">MAIN LEVEL · 7,200 SQFT</text></g>' +
-  '<g transform="translate(300,800)"><circle r="26" fill="none" stroke="#7e5a2b" stroke-width="2.5"/><path d="M0,-16 L7,10 L0,4 L-7,10 Z" fill="#7e5a2b"/><text y="-34" text-anchor="middle" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="14" font-weight="800">N</text></g>' +
+  '<rect x="60" y="150" width="220" height="180" fill="#efe6d1" opacity=".4" stroke="#7e5a2b" stroke-width="2" stroke-dasharray="10 8"/>' +
+  '<text x="170" y="170" text-anchor="middle" fill="#8a7654" font-family="Inter,sans-serif" font-size="12" font-weight="700" letter-spacing="2">MOTOR COURT</text>' +
+  '<g fill="#fcf5e7" stroke="#2e2418" stroke-width="4">' +
+  '<rect x="60" y="440" width="220" height="240"/><rect x="280" y="440" width="180" height="240"/>' +
+  '<rect x="460" y="440" width="200" height="120"/><rect x="460" y="560" width="200" height="120"/>' +
+  '<rect x="660" y="440" width="180" height="240"/><rect x="840" y="440" width="180" height="240"/>' +
+  '<rect x="1020" y="440" width="140" height="160"/><rect x="1160" y="440" width="140" height="160"/><rect x="1020" y="600" width="280" height="180"/>' +
+  '<rect x="580" y="140" width="320" height="300"/><rect x="580" y="30" width="180" height="110"/><rect x="760" y="30" width="140" height="110"/>' +
+  '<rect x="1020" y="140" width="280" height="100"/><rect x="1020" y="240" width="280" height="100"/><rect x="1020" y="340" width="280" height="100"/>' +
+  '</g>' +
+  '<g fill="#f6efdf" stroke="#2e2418" stroke-width="2.5">' +
+  '<rect x="280" y="630" width="60" height="50"/><rect x="610" y="440" width="50" height="50"/>' +
+  '<rect x="1020" y="440" width="140" height="40"/><rect x="1160" y="440" width="140" height="40"/>' +
+  '<rect x="1250" y="140" width="50" height="100"/><rect x="1250" y="240" width="50" height="100"/><rect x="1250" y="340" width="50" height="100"/>' +
+  '<rect x="1020" y="640" width="80" height="60"/><rect x="580" y="70" width="50" height="40"/>' +
+  '</g>' +
+  '<rect x="900" y="140" width="120" height="300" fill="#dfe8c8" opacity=".45" stroke="#7e5a2b" stroke-width="2" stroke-dasharray="10 8"/>' +
+  '<rect x="280" y="680" width="180" height="100" fill="#f0e6d2" opacity=".55" stroke="#7e5a2b" stroke-width="2" stroke-dasharray="10 8"/>' +
+  '<rect x="60" y="800" width="1340" height="80" fill="none" stroke="#7e5a2b" stroke-width="2.5" stroke-dasharray="12 10"/>' +
+  '<rect x="300" y="814" width="600" height="52" rx="24" fill="#bfe0e4" stroke="#5d99a4" stroke-width="2.5" opacity=".85"/>' +
+  '<g fill="#7e5a2b" opacity=".7"><rect x="950" y="822" width="14" height="36" rx="4"/><rect x="974" y="822" width="14" height="36" rx="4"/><rect x="998" y="822" width="14" height="36" rx="4"/></g>' +
+  '<g fill="none" stroke="#7e5a2b" stroke-width="2.5"><rect x="120" y="812" width="44" height="36" rx="6"/><circle cx="142" cy="830" r="10"/></g>' +
+  '<path d="M40,890 Q140,884 220,891 T400,888 T600,892 T820,887 T1040,891 T1260,886 T1420,890" fill="none" stroke="#7e5a2b" stroke-width="2" stroke-dasharray="2 6" opacity=".9"/>' +
+  '<path d="M60,897 Q300,903 560,898 T1080,900 T1400,896" fill="none" stroke="#5d99a4" stroke-width="1.5" opacity=".5"/>' +
+  '<g fill="#6b5a40" font-family="Inter,sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">' +
+  '<text x="170" y="565" font-size="16">STUDY</text>' +
+  '<text x="380" y="555" font-size="15">LIVING ROOM</text><text x="310" y="660" font-size="9" letter-spacing="1">BATH</text>' +
+  '<text x="560" y="505" font-size="13">WET BAR</text><text x="635" y="470" font-size="8" letter-spacing="1">BATH</text>' +
+  '<text x="560" y="625" font-size="14">KITCHEN</text>' +
+  '<text x="750" y="565" font-size="15">GREAT ROOM</text>' +
+  '<text x="930" y="565" font-size="15">DINING</text>' +
+  '<text x="1090" y="465" font-size="9" letter-spacing="1">BATH</text><text x="1090" y="548" font-size="13">BEDROOM 2</text>' +
+  '<text x="1230" y="465" font-size="9" letter-spacing="1">BATH</text><text x="1230" y="548" font-size="13">BEDROOM 3</text>' +
+  '<text x="1160" y="735" font-size="15">PRIMARY BEDROOM</text><text x="1060" y="675" font-size="9" letter-spacing="1">BATH</text>' +
+  '<text x="740" y="255" font-size="13">WELLNESS CENTER</text>' +
+  '<text x="370" y="400" font-size="12">ENTRANCE</text>' +
+  '<text x="670" y="80" font-size="11">MOVIE THEATRE</text><text x="670" y="98" font-size="9" letter-spacing="1">10 SEATS</text><text x="605" y="94" font-size="7" letter-spacing="1">BATH</text>' +
+  '<text x="830" y="90" font-size="12">WINE CELLAR</text>' +
+  '<text x="1135" y="195" font-size="10">BEDROOM 6</text><text x="1275" y="195" font-size="7" letter-spacing="1">BATH</text>' +
+  '<text x="1135" y="295" font-size="10">BEDROOM 5</text><text x="1275" y="295" font-size="7" letter-spacing="1">BATH</text>' +
+  '<text x="1135" y="395" font-size="10">BEDROOM 4</text><text x="1275" y="395" font-size="7" letter-spacing="1">BATH</text>' +
+  '<text x="960" y="272" font-size="9" fill="#5d7a3a">OUTDOOR</text><text x="960" y="290" font-size="9" fill="#5d7a3a">GARDEN</text><text x="960" y="308" font-size="9" fill="#5d7a3a">COURTYARD</text>' +
+  '<text x="370" y="738" font-size="11" fill="#8a7654">OUTDOOR DINING</text>' +
+  '<text x="1250" y="854" font-size="12" fill="#5d99a4">POOL DECK</text>' +
+  '<text x="142" y="866" font-size="8" letter-spacing="1" fill="#8a7654">FIRE PIT</text>' +
+  '<text x="700" y="882" font-size="9" letter-spacing="1.5" fill="#7e5a2b">CLIFF EDGE</text>' +
+  '</g>' +
+  '<g stroke="#7e5a2b" stroke-width="1.5" opacity=".8"><line x1="60" y1="18" x2="1300" y2="18"/><line x1="60" y1="10" x2="60" y2="26"/><line x1="1300" y1="10" x2="1300" y2="26"/></g>' +
+  '<text x="680" y="13" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">168\'-0&quot;</text>' +
+  '<g font-family="Inter,sans-serif" fill="#6b5a40" text-anchor="end"><text x="1585" y="845" font-size="15" font-weight="800" letter-spacing="3">1 MARISOL POINT</text><text x="1585" y="868" font-size="12.5" font-weight="600" letter-spacing="2.5">MAIN LEVEL · 12,400 SQFT</text></g>' +
+  '<g transform="translate(100,858)"><circle r="20" fill="none" stroke="#7e5a2b" stroke-width="2"/><path d="M0,-13 L5,7 L0,2 L-5,7 Z" fill="#7e5a2b"/><text y="-26" text-anchor="middle" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="12" font-weight="800">N</text></g>' +
   '</symbol>' +
 
-  /* ====== floorplan · upper level ====== */
+  /* ====== floorplan · garage level ====== */
   '<symbol id="scnPlan2" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">' +
   '<rect width="1600" height="900" fill="#f7ead0"/>' +
   '<g stroke="#2e2418" opacity=".05"><path d="M0,150 H1600 M0,300 H1600 M0,450 H1600 M0,600 H1600 M0,750 H1600 M200,0 V900 M400,0 V900 M600,0 V900 M800,0 V900 M1000,0 V900 M1200,0 V900 M1400,0 V900"/></g>' +
-  '<rect x="420" y="170" width="760" height="440" fill="#fcf5e7" stroke="#2e2418" stroke-width="10"/>' +
-  '<g stroke="#2e2418" stroke-width="6"><line x1="680" y1="170" x2="680" y2="390"/><line x1="680" y1="450" x2="680" y2="610"/><line x1="940" y1="170" x2="940" y2="330"/><line x1="940" y1="400" x2="940" y2="610"/><line x1="420" y1="400" x2="620" y2="400"/><line x1="680" y1="400" x2="880" y2="400"/><line x1="1000" y1="400" x2="1180" y2="400"/></g>' +
-  '<g fill="none" stroke="#7e5a2b" stroke-width="2.5" opacity=".7"><path d="M680,390 A60,60 0 0 1 740,450"/><path d="M940,330 A70,70 0 0 1 870,400"/></g>' +
-  '<g stroke="#7e5a2b" stroke-width="3" fill="none">' +
-  '<rect x="470" y="230" width="100" height="90" rx="8"/><rect x="480" y="238" width="34" height="20" rx="5"/><rect x="524" y="238" width="34" height="20" rx="5"/>' +
-  '<rect x="740" y="220" width="110" height="94" rx="8"/><rect x="750" y="228" width="38" height="20" rx="5"/><rect x="798" y="228" width="38" height="20" rx="5"/>' +
-  '<rect x="1010" y="220" width="110" height="94" rx="8"/><rect x="1020" y="228" width="38" height="20" rx="5"/><rect x="1068" y="228" width="38" height="20" rx="5"/>' +
-  '<rect x="470" y="460" width="150" height="46" rx="8"/><line x1="470" y1="530" x2="620" y2="530"/><line x1="470" y1="552" x2="596" y2="552"/>' +
-  '<rect x="740" y="470" width="60" height="110" rx="8"/><rect x="820" y="470" width="90" height="40" rx="20"/>' +
-  '<rect x="1010" y="470" width="120" height="100" rx="8"/><rect x="1022" y="480" width="40" height="22" rx="5"/><rect x="1074" y="480" width="40" height="22" rx="5"/></g>' +
-  '<g><rect x="420" y="620" width="760" height="80" fill="none" stroke="#7e5a2b" stroke-width="3" stroke-dasharray="12 10"/><g fill="#7e5a2b" opacity=".7"><rect x="500" y="636" width="14" height="44" rx="4"/><rect x="524" y="636" width="14" height="44" rx="4"/><rect x="548" y="636" width="14" height="44" rx="4"/><rect x="572" y="636" width="14" height="44" rx="4"/></g></g>' +
-  '<g fill="#6b5a40" font-family="Inter,sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">' +
-  '<text x="545" y="210">GUEST SUITE I</text><text x="805" y="205">GUEST SUITE II</text><text x="1068" y="205">GUEST SUITE III</text>' +
-  '<text x="545" y="442">LIBRARY</text><text x="820" y="442">GYM &amp; SPA</text><text x="1080" y="442">MEDIA LOUNGE</text>' +
-  '<text x="800" y="668">OCEAN DECK</text></g>' +
-  '<g stroke="#7e5a2b" stroke-width="2" opacity=".8"><line x1="420" y1="138" x2="1180" y2="138"/><line x1="420" y1="128" x2="420" y2="148"/><line x1="1180" y1="128" x2="1180" y2="148"/></g>' +
-  '<text x="800" y="126" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="15" font-weight="700" letter-spacing="2" text-anchor="middle">98\'-0&quot;</text>' +
-  '<g font-family="Inter,sans-serif" fill="#6b5a40"><text x="1330" y="806" font-size="15" font-weight="800" letter-spacing="3">1 MARISOL POINT</text><text x="1330" y="830" font-size="12.5" font-weight="600" letter-spacing="2.5">UPPER LEVEL · 5,200 SQFT</text></g>' +
-  '<g transform="translate(300,800)"><circle r="26" fill="none" stroke="#7e5a2b" stroke-width="2.5"/><path d="M0,-16 L7,10 L0,4 L-7,10 Z" fill="#7e5a2b"/><text y="-34" text-anchor="middle" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="14" font-weight="800">N</text></g>' +
+  '<path d="M580,30 H900 V440 H660 V680 H60 V440 H580 Z" fill="#c9b98f" stroke="#7e5a2b" stroke-width="2.5"/>' +
+  '<g fill="#6b5a40" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">' +
+  '<text x="360" y="555" font-size="18">GARAGE</text><text x="360" y="578" font-size="12" letter-spacing="2">4 COLLECTOR BAYS</text>' +
+  '</g>' +
+  '<g stroke="#7e5a2b" stroke-width="1.5" opacity=".8"><line x1="60" y1="18" x2="1300" y2="18"/><line x1="60" y1="10" x2="60" y2="26"/><line x1="1300" y1="10" x2="1300" y2="26"/></g>' +
+  '<text x="680" y="13" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">168\'-0&quot;</text>' +
+  '<g font-family="Inter,sans-serif" fill="#6b5a40" text-anchor="end"><text x="1585" y="845" font-size="15" font-weight="800" letter-spacing="3">1 MARISOL POINT</text><text x="1585" y="868" font-size="12.5" font-weight="600" letter-spacing="2.5">GARAGE LEVEL · 5,000 SQFT</text></g>' +
+  '<g transform="translate(100,858)"><circle r="20" fill="none" stroke="#7e5a2b" stroke-width="2"/><path d="M0,-13 L5,7 L0,2 L-5,7 Z" fill="#7e5a2b"/><text y="-26" text-anchor="middle" fill="#7e5a2b" font-family="Inter,sans-serif" font-size="12" font-weight="800">N</text></g>' +
   '</symbol>' +
 
   /* ====== map & walkscore ====== */
@@ -373,18 +400,26 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-  /* ─────────── count-up ─────────── */
+  /* ─────────── count-up ───────────
+     Small targets (beds, baths…) get a linear ramp over the full
+     duration so every integer is visibly shown, instead of the cubic
+     ease-out landing on them in a single imperceptible frame. */
   function countUp(el) {
     if (el.dataset.counting === '1') return;
     var target = parseFloat(el.dataset.count);
     if (isNaN(target)) return;
-    var fmt = function (v) { return Math.round(v).toLocaleString('en-US'); };
+    var noGroup = el.hasAttribute('data-nogroup');
+    var fmt = function (v) {
+      var n = Math.round(v);
+      return noGroup ? String(n) : n.toLocaleString('en-US');
+    };
     if (prefersReduced) { el.textContent = fmt(target); return; }
     el.dataset.counting = '1';
+    var small = target <= 30;
     var dur = 1300, t0 = performance.now();
     (function tick(now) {
       var p = Math.min((now - t0) / dur, 1);
-      var e = 1 - Math.pow(1 - p, 3);
+      var e = small ? p : 1 - Math.pow(1 - p, 3);
       el.textContent = fmt(target * e);
       if (p < 1) requestAnimationFrame(tick);
     })(t0);
@@ -398,6 +433,38 @@
     });
   }, { threshold: 0.4 });
   document.querySelectorAll('[data-countup]').forEach(function (el) { cio.observe(el); });
+
+  /* ─────────── hero zoom-scroll ───────────
+     Hero pins via CSS (position:sticky) inside a tall .hero-zoom wrapper.
+     While pinned, scroll progress drives the background image scale and
+     fades the overlaid copy out, so the room gets a clear, text-free
+     look before the facts strip takes over. */
+  var heroZoom = document.querySelector('.hero-zoom');
+  if (heroZoom) {
+    if (prefersReduced) {
+      heroZoom.classList.add('static');
+    } else {
+      var hzPic = heroZoom.querySelector('.est-hero > .ph');
+      var hzInner = heroZoom.querySelector('.hero-inner');
+      var hzCue = heroZoom.querySelector('.scroll-cue');
+      var hzTicking = false;
+      var renderHeroZoom = function () {
+        hzTicking = false;
+        var runway = heroZoom.offsetHeight - window.innerHeight;
+        var p = runway > 0 ? Math.min(Math.max(-heroZoom.getBoundingClientRect().top, 0) / runway, 1) : 0;
+        if (hzPic) hzPic.style.transform = 'scale(' + (1 + p * 0.55) + ')';
+        var textP = Math.max(1 - p / 0.18, 0);
+        if (hzInner) { hzInner.style.opacity = textP; hzInner.style.pointerEvents = textP < 0.05 ? 'none' : ''; }
+        if (hzCue) hzCue.style.opacity = textP;
+      };
+      var onHeroZoomScroll = function () {
+        if (!hzTicking) { hzTicking = true; requestAnimationFrame(renderHeroZoom); }
+      };
+      window.addEventListener('scroll', onHeroZoomScroll, { passive: true });
+      window.addEventListener('resize', onHeroZoomScroll);
+      renderHeroZoom();
+    }
+  }
 
   /* ─────────── toast ─────────── */
   var toastEl = document.createElement('div');
@@ -420,24 +487,61 @@
   var playBtn = document.getElementById('filmPlay');
   if (filmFrame && playBtn) {
     var noteT = null;
-    playBtn.addEventListener('click', function () {
-      var v = document.createElement('video');
-      v.src = 'assets/marisol/film.mp4';
-      v.controls = true;
-      v.playsInline = true;
-      v.setAttribute('aria-label', 'Property film for 1 Marisol Point');
-      v.addEventListener('error', function () {
-        v.remove();
-        filmFrame.classList.add('noted');
-        clearTimeout(noteT);
-        noteT = setTimeout(function () { filmFrame.classList.remove('noted'); }, 5200);
+    var filmVideo = null;
+
+    function startFilm(cinema) {
+      if (cinema) filmFrame.classList.add('cinema');
+
+      if (!filmVideo) {
+        var v = document.createElement('video');
+        v.src = 'assets/marisol/film.mp4';
+        v.controls = true;
+        v.playsInline = true;
+        v.setAttribute('aria-label', 'Property film for 1 Marisol Point');
+        v.addEventListener('error', function () {
+          v.remove();
+          filmVideo = null;
+          filmFrame.classList.remove('cinema');
+          filmFrame.classList.add('noted');
+          clearTimeout(noteT);
+          noteT = setTimeout(function () { filmFrame.classList.remove('noted'); }, 5200);
+        });
+        v.addEventListener('canplay', function () {
+          playBtn.style.display = 'none';
+          var p = v.play();
+          if (p && p.catch) p.catch(function () {});
+        });
+        filmFrame.appendChild(v);
+        filmVideo = v;
+      } else {
+        var pr = filmVideo.play();
+        if (pr && pr.catch) pr.catch(function () {});
+      }
+
+      if (cinema) {
+        requestAnimationFrame(function () {
+          filmFrame.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      }
+    }
+
+    playBtn.addEventListener('click', function () { startFilm(false); });
+
+    var heroWatch = document.getElementById('heroWatch');
+    if (heroWatch) {
+      heroWatch.addEventListener('click', function (e) {
+        e.preventDefault();
+        startFilm(true);
       });
-      v.addEventListener('canplay', function () {
-        playBtn.style.display = 'none';
-        v.play();
+    }
+
+    var filmExit = document.getElementById('filmExit');
+    if (filmExit) {
+      filmExit.addEventListener('click', function () {
+        filmFrame.classList.remove('cinema');
+        filmFrame.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'center' });
       });
-      filmFrame.appendChild(v);
-    });
+    }
   }
 
   /* ─────────── lightbox (gallery pages + mosaics) ─────────── */

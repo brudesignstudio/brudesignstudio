@@ -177,7 +177,7 @@
       status.className='form-status';
       // required fields
       if(!form.name.value.trim()||!form.email.value.trim()||!form.message.value.trim()){
-        setStatus('Please fill in your name, email, and a short message.','err');return;
+        setStatus('Please fill in your name, email and a short message.','err');return;
       }
       // captcha
       if(parseInt(capIn.value,10)!==answer){
@@ -199,7 +199,7 @@
         const out=await res.json();
         if(out.success){
           form.reset();newCaptcha();
-          setStatus("Thank you. Your message is on its way — we'll reply within one business day.",'ok');
+          setStatus("Thank you. Your message is on its way. We'll reply within one business day.",'ok');
         }else{
           setStatus('Something went wrong sending your message. Please try again in a moment.','err');
         }

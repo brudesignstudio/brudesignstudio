@@ -494,7 +494,7 @@
 
       if (!filmVideo) {
         var v = document.createElement('video');
-        v.src = 'assets/marisol/film.mp4';
+        v.src = 'video/film.mp4';
         v.controls = true;
         v.playsInline = true;
         v.setAttribute('aria-label', 'Property film for 1 Marisol Point');

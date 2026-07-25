@@ -26,6 +26,7 @@ Aim for ≥ 2000px wide (hero ≥ 2400px).
 | `primary-bath.jpg` | Spa bath |
 | `office.jpg` | Study / office |
 | `guest-suite.jpg` | A guest bedroom |
+| `wet-bar.jpg` | Wet bar opposite the kitchen — top-shelf liquor display, no windows |
 
 ## Amenities
 | File | Shot |
@@ -33,6 +34,7 @@ Aim for ≥ 2000px wide (hero ≥ 2400px).
 | `cinema.jpg` | Screening room |
 | `wine-cellar.jpg` | Wine cellar |
 | `gym-spa.jpg` | Gym / wellness wing |
+| `gallery-garage.jpg` | 4-car collector garage behind glass, with elevator |
 
 ## Aerial
 | File | Shot |

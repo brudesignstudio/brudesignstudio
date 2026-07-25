@@ -213,6 +213,7 @@ img{max-width:100%;}
 @media(hover:hover) and (pointer:fine) and (min-width:1021px){
   .hl:hover::before{opacity:.24;}
 }
+.hl.tap-active::before{opacity:.24;}
 .hl .n{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--gold);letter-spacing:.06em;}
 .hl h3{font-size:clamp(19px,1.8vw,23px);letter-spacing:.04em;}
 .hl p{font-size:13.5px;line-height:1.65;color:var(--ink-faint);}

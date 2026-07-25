@@ -400,6 +400,15 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
+  /* ─────────── estate feature cards: tap to reveal image (touch has no hover) ─────────── */
+  document.querySelectorAll('.hl').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var wasActive = card.classList.contains('tap-active');
+      document.querySelectorAll('.hl.tap-active').forEach(function (c) { c.classList.remove('tap-active'); });
+      if (!wasActive) card.classList.add('tap-active');
+    });
+  });
+
   /* ─────────── count-up ───────────
      Small targets (beds, baths…) get a linear ramp over the full
      duration so every integer is visibly shown, instead of the cubic
@@ -416,7 +425,8 @@
     if (prefersReduced) { el.textContent = fmt(target); return; }
     el.dataset.counting = '1';
     var small = target <= 30;
-    var dur = 1300, t0 = performance.now();
+    var dur = 1300;
+    var t0 = performance.now();
     (function tick(now) {
       var p = Math.min((now - t0) / dur, 1);
       var e = small ? p : 1 - Math.pow(1 - p, 3);
@@ -427,7 +437,7 @@
   var cio = new IntersectionObserver(function (es) {
     es.forEach(function (e) {
       if (!e.isIntersecting) return;
-      e.target.querySelectorAll('[data-count]').forEach(countUp);
+      e.target.querySelectorAll('[data-count]').forEach(function (el) { countUp(el); });
       if (e.target.dataset.count) countUp(e.target);
       cio.unobserve(e.target);
     });
